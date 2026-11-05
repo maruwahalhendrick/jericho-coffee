@@ -2,44 +2,43 @@
 📅 06 November 2026 • Cup Standard: 12 oz (Es 150g)
 
 🎯 *HASIL RADAR TREN:*
-*3 RESEP ES KOPI ENAK DENGAN MODAL DIBAWAH 10 RIBU ! #eskopisusu #coffee* (via Opak Kopi)
-Keyword: _resep kopi keliling viral modal kecil_
+*KENAPA KOPI GEROBAKAN BISA JUAL PRODUK SANGAT MURAH? | Waktu Larka Bagian Ngopi* (via Larka Rahadi Riyanto)
+Keyword: _street coffee indonesia resep 10 ribuan_
 
 ---
 
-🧪 *SIMULASI MENU BARU: [JRC-004]*
-*Kopi Cham Melati Senja*
-Kategori: Signature | Status: `STAGE 1: SIMULATED`
+🧪 *SIMULASI MENU BARU: [JRC-005]*
+*Street Mocha Beng-Beng Sea Salt*
+Kategori: Dessert Coffee | Status: `STAGE 1: SIMULATED`
 
 📋 *Komposisi & HPP Breakdown:*
-  • Nescafe Classic (2g (30ml hot water)) — Rp 1,200
-  • Teh Melati Pekat (Saring Kain) (50ml) — Rp 500
-  • Susu Milku (100ml) — Rp 1,750
-  • Susu Evaporasi Tiga Sapi (20ml) — Rp 750
-  • Gula Aren (20ml) — Rp 550
+  • Beng-Beng Drink (1 sachet (30g)) — Rp 2,000
+  • Kapal Api Super Instan (1 sachet (2.2g)) — Rp 1,000
+  • Susu Milku UHT Plain (100ml) — Rp 1,750
+  • Sea Salt (0.5g) — Rp 50
   • Es Batu Kristal (150g) — Rp 400
 ───────────────────────
-💰 *Total HPP:* *Rp 5,150* (Lolos Audit $\le$ 6rb)
-🏷️ *Rekomendasi Jual:* *Rp 11,000* (Margin: ~53.2%)
+💰 *Total HPP:* *Rp 5,200* (Lolos Audit $\le$ 6rb)
+🏷️ *Rekomendasi Jual:* *Rp 10,000* (Margin: ~48.0%)
 
 ⚗️ *Teknik Ekstraksi:*
-_Hot Bloom Flash Chill: Daun teh melati diekstrak pekat menggunakan metode tubruk saring kain tradisional, sementara 2g Nescafe Classic di-blooming dengan 30ml air panas suhu 90°C selama 30 detik untuk mengunci aroma earthy robusta sebelum disatukan dingin agar wangi floral melati tetap utuh._
+_Frother Crema Hack: 2.2g Kapal Api Super Instan dilarutkan bersama 1 sachet Beng-Beng Drink dan sejumput sea salt dalam 95ml air panas 85°C, lalu di-froth selama 15 detik sampai mengembang membentuk foam moka berkarakter micro-crema yang glossy dan kental._
 
 🎨 *Urutan Penuangan:*
-_Method A Layered Visual: 1) Tuang 20ml gula aren murni ke dasar cup 12oz. 2) Masukkan campuran 50ml konsentrat teh melati, 100ml Susu Milku, dan 20ml susu evaporasi yang sudah di-stir merata menghasilkan lapisan milk-tea keemasan. 3) Masukkan 150g es batu kristal perlahan memadati cup. 4) Tuangkan perlahan 30ml blooming Nescafe Classic di atas es batu untuk menghasilkan visual split layer sunset 3 warna kontras._
+_Method A Layered Visual: Tuang 100ml Susu Milku dingin ke dasar cup 12oz. Masukkan 150g es batu kristal perlahan hingga padat. Tuang perlahan larutan Mocha Malt Kopi berbusa di atas es batu untuk menciptakan kontras layer cokelat pekat di atas putih susu._
 
 👅 *Profil Rasa:*
-_Aromatik floral bunga melati yang menenangkan saat pertama dihirup, body silky-creamy gurih dari perpaduan Milku dan evaporasi, ditutup aftertaste pahit tegas kopi robusta dengan sweetness legit karamel aren._
+_Dominan chocolate malt dan wafer gurih khas Beng-Beng, diimbangi pahit tegas robusta murni, creamy susu UHT, serta rounded aftertaste gurih berkat sentuhan sea salt yang memotong rasa enek._
 
 ---
 
 🎬 *CREATIVE STORYTELLING (TikTok/Reels):*
 *Tema:* _The Honest Alchemist_
-*Visual Hook (00:00–00:03):* Detik 00:00-00:02: Tangan melepas lanyard ID card kantor yang dilempar ke meja, langsung cut ekstrem ke kucuran hitam kopi pekat menabrak layer susu teh melati yang mengalir perlahan di sela es batu.
-*Audio / ASMR Cue:* Suara benturan lanyard di meja, crackling es batu saat disiram kopi cair (ASMR renyah), disambung alunan lofi chillhop akustik tempo 75 BPM.
+*Visual Hook (00:00–00:03):* Close-up slow-motion penuangan moka cokelat pekat berbusa tebal yang perlahan turun membelah es batu dan susu putih Milku. Teks hook di layar: 'CAFE JUAL 38 RIBU, GEROBAK JUAL 10 RIBU. UNTUNGNYA DARI MANA?'
+*Audio / ASMR Cue:* ASMR desis hand-frother mini, gemerincing es batu jatuh ke cup mika tebal, sedotan menusuk lid cup, diiringi alunan lofi jazzy mellow bertempo 75 BPM dengan vinyl crackle halus.
 
 🎙️ *Voiceover / Teks Layar:*
-"Jam enam sore. Otak udah mendidih sama revisi dadakan, tapi fisik nggak boleh tumbang. Mau teh biar tenang, tapi butuh kopi biar tetap waras. Akhirnya kita campur keduanya: Kopi Cham Melati. Cuma sebelas ribu, tapi rasanya kayak jeda lima belas menit paling jujur hari ini. Pelan-pelan ya, lu udah bertahan hebat."
+"Pernah mikir nggak, kenapa es moka di mall bisa hampir 40 ribu, tapi di pinggir jalan ada yang bisa jual 10 ribu dan rasanya tetep masuk akal? Di cafe estetik, yang kita bayar itu sofa empuk, AC dingin, sama gengsi. Di gerobak Jericho, lo cuma bayar rasa yang jujur: robusta murni, lelehan cokelat malt Beng-Beng, susu dingin, plus sejumput sea salt biar manisnya nggak giung. Untungnya tipis? Banget. Tapi buat kita yang seharian diperas revisi dan gaji numpang lewat, segelas moka dingin sepuluh ribu ini bukan soal margin... tapi jeda napas yang nggak bikin dompet ngerasa bersalah."
 
 ---
-📂 Database menu diperbarui: `4 menu di Vault`.
+📂 Database menu diperbarui: `5 menu di Vault`.

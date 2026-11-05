@@ -139,7 +139,7 @@ window.MENU_VAULT = [
     "cup_size": "12oz",
     "ice_weight_g": 150,
     "liquid_volume_ml": 200,
-    "extraction_method": "Hot Bloom Flash Chill: Daun teh melati diekstrak pekat menggunakan metode tubruk saring kain tradisional, sementara 2g Nescafe Classic di-blooming dengan 30ml air panas suhu 90\u00b0C selama 30 detik untuk mengunci aroma earthy robusta sebelum disatukan dingin agar wangi floral melati tetap utuh.",
+    "extraction_method": "Hot Bloom Flash Chill: Daun teh melati diekstrak pekat menggunakan metode tubruk saring kain tradisional, sementara 2g Nescafe Classic di-blooming dengan 30ml air panas suhu 90°C selama 30 detik untuk mengunci aroma earthy robusta sebelum disatukan dingin agar wangi floral melati tetap utuh.",
     "pouring_sequence": "Method A Layered Visual: 1) Tuang 20ml gula aren murni ke dasar cup 12oz. 2) Masukkan campuran 50ml konsentrat teh melati, 100ml Susu Milku, dan 20ml susu evaporasi yang sudah di-stir merata menghasilkan lapisan milk-tea keemasan. 3) Masukkan 150g es batu kristal perlahan memadati cup. 4) Tuangkan perlahan 30ml blooming Nescafe Classic di atas es batu untuk menghasilkan visual split layer sunset 3 warna kontras.",
     "ingredients": [
       {
@@ -184,5 +184,54 @@ window.MENU_VAULT = [
       "audio_cue": "Suara benturan lanyard di meja, crackling es batu saat disiram kopi cair (ASMR renyah), disambung alunan lofi chillhop akustik tempo 75 BPM."
     },
     "created_at": "2026-11-06T01:23:45.932408"
+  },
+  {
+    "id": "JRC-005",
+    "name": "Street Mocha Beng-Beng Sea Salt",
+    "category": "Dessert Coffee",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 195,
+    "extraction_method": "Frother Crema Hack: 2.2g Kapal Api Super Instan dilarutkan bersama 1 sachet Beng-Beng Drink dan sejumput sea salt dalam 95ml air panas 85°C, lalu di-froth selama 15 detik sampai mengembang membentuk foam moka berkarakter micro-crema yang glossy dan kental.",
+    "pouring_sequence": "Method A Layered Visual: Tuang 100ml Susu Milku dingin ke dasar cup 12oz. Masukkan 150g es batu kristal perlahan hingga padat. Tuang perlahan larutan Mocha Malt Kopi berbusa di atas es batu untuk menciptakan kontras layer cokelat pekat di atas putih susu.",
+    "ingredients": [
+      {
+        "item": "Beng-Beng Drink",
+        "amount": "1 sachet (30g)",
+        "cost": 2000
+      },
+      {
+        "item": "Kapal Api Super Instan",
+        "amount": "1 sachet (2.2g)",
+        "cost": 1000
+      },
+      {
+        "item": "Susu Milku UHT Plain",
+        "amount": "100ml",
+        "cost": 1750
+      },
+      {
+        "item": "Sea Salt",
+        "amount": "0.5g",
+        "cost": 50
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5200,
+    "suggested_price": 10000,
+    "gross_margin_pct": 48.0,
+    "taste_notes": "Dominan chocolate malt dan wafer gurih khas Beng-Beng, diimbangi pahit tegas robusta murni, creamy susu UHT, serta rounded aftertaste gurih berkat sentuhan sea salt yang memotong rasa enek.",
+    "creative_concept": {
+      "theme": "The Honest Alchemist",
+      "visual_hook": "Close-up slow-motion penuangan moka cokelat pekat berbusa tebal yang perlahan turun membelah es batu dan susu putih Milku. Teks hook di layar: 'CAFE JUAL 38 RIBU, GEROBAK JUAL 10 RIBU. UNTUNGNYA DARI MANA?'",
+      "voiceover": "Pernah mikir nggak, kenapa es moka di mall bisa hampir 40 ribu, tapi di pinggir jalan ada yang bisa jual 10 ribu dan rasanya tetep masuk akal? Di cafe estetik, yang kita bayar itu sofa empuk, AC dingin, sama gengsi. Di gerobak Jericho, lo cuma bayar rasa yang jujur: robusta murni, lelehan cokelat malt Beng-Beng, susu dingin, plus sejumput sea salt biar manisnya nggak giung. Untungnya tipis? Banget. Tapi buat kita yang seharian diperas revisi dan gaji numpang lewat, segelas moka dingin sepuluh ribu ini bukan soal margin... tapi jeda napas yang nggak bikin dompet ngerasa bersalah.",
+      "audio_cue": "ASMR desis hand-frother mini, gemerincing es batu jatuh ke cup mika tebal, sedotan menusuk lid cup, diiringi alunan lofi jazzy mellow bertempo 75 BPM dengan vinyl crackle halus."
+    },
+    "created_at": "2026-11-06T01:29:14.121217"
   }
 ];
