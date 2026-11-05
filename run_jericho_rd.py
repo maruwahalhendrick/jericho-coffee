@@ -314,6 +314,14 @@ _{new_recipe['taste_notes']}_
     with open(report_file, "w", encoding="utf-8") as f:
         f.write(report_md)
 
+    # 4. Auto-commit & push to GitHub Pages
+    try:
+        subprocess.run(["git", "add", "data/", "reports/"], cwd=BASE_DIR, check=True, capture_output=True)
+        subprocess.run(["git", "commit", "-m", f"auto: R&D update [{new_recipe['id']}] {new_recipe['name']}"], cwd=BASE_DIR, check=True, capture_output=True)
+        subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR, check=True, capture_output=True)
+    except Exception:
+        pass
+
     print(report_md.strip())
 
 if __name__ == "__main__":
