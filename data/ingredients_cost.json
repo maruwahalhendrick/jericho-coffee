@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-11-06T00:00:00+07:00",
+  "currency": "IDR",
+  "core_skus": {
+    "kapal_api_special_6g": { "name": "Kapal Api Special 6g (Tubruk)", "price_per_unit": 1000, "unit": "sachet (6g)" },
+    "kapal_api_super_2_2g": { "name": "Kapal Api Super Instan 2.2g", "price_per_unit": 1000, "unit": "sachet (2.2g)" },
+    "nescafe_classic": { "name": "Nescafe Classic Soluble", "price_per_unit": 1200, "unit": "porsi (2g)" },
+    "nescafe_ice_roast": { "name": "Nescafe Ice Roast", "price_per_unit": 1700, "unit": "porsi (2g)" },
+    "good_day_vanilla": { "name": "Good Day Vanilla Latte", "price_per_unit": 2000, "unit": "sachet" },
+    "milo_sachet": { "name": "Milo Active-Go", "price_per_unit": 2000, "unit": "sachet" },
+    "beng_beng_drink": { "name": "Beng-Beng Drink", "price_per_unit": 2000, "unit": "sachet" }
+  },
+  "dairy_and_creamer": {
+    "susu_milku_100ml": { "name": "Susu UHT Milku (100ml)", "price_per_unit": 1750, "unit": "100ml" },
+    "creamer_20ml": { "name": "Creamer Kental Manis / Evaporasi", "price_per_unit": 700, "unit": "20ml" },
+    "susu_evaporasi_tiga_sapi_30ml": { "name": "Susu Evaporasi Tiga Sapi", "price_per_unit": 1100, "unit": "30ml" },
+    "santan_kara_sasa_25ml": { "name": "Santan Instan Kara/Sasa", "price_per_unit": 1200, "unit": "25ml" }
+  },
+  "sweeteners_and_accents": {
+    "gula_aren_murni_30ml": { "name": "Gula Aren Cair Murni", "price_per_unit": 800, "unit": "30ml" },
+    "sea_salt_micro": { "name": "Sea Salt / Garam Dapur Gurih", "price_per_unit": 50, "unit": "sejimpit (1g)" },
+    "teh_melati_pekat_50ml": { "name": "Ekstrak Teh Melati Tubruk", "price_per_unit": 500, "unit": "50ml" },
+    "jahe_wangi_half_scht": { "name": "Ekstrak Jahe Merah/Wangi", "price_per_unit": 800, "unit": "0.5 sachet" },
+    "cocoa_powder_van_houten_7g": { "name": "Pure Cocoa Powder Van Houten", "price_per_unit": 1400, "unit": "7g" },
+    "sirup_pisang_rozen_15ml": { "name": "Sirup Retro Pisang/Rozen", "price_per_unit": 800, "unit": "15ml" }
+  },
+  "packaging_and_ice": {
+    "es_batu_kristal_150g": { "name": "Es Batu Kristal Higienis", "price_per_unit": 400, "unit": "150 gram" },
+    "cup_12oz_lid_straw": { "name": "Cup Plastik 12oz + Tutup + Sedotan", "price_per_unit": 650, "unit": "set (opsional packaging)" }
+  }
+}
