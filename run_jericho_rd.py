@@ -35,11 +35,14 @@ def save_json(path, data):
 def scout_trending_video():
     history = load_json(SCOUT_HISTORY_PATH, {"analyzed_videos": [], "last_query_index": 0, "search_queries": []})
     queries = history.get("search_queries", [
-        "resep kopi keliling viral modal kecil",
-        "kopi susu kekinian modal 10 ribu cup 12oz",
-        "resep es kopi susu creamy milku",
-        "kopi cold brew street food resep",
-        "ide jualan es kopi sea salt modal receh"
+        "vietnamese iced coffee recipe street style",
+        "thai iced coffee street vendor recipe",
+        "salted coffee recipe vietnam street style",
+        "coconut coffee recipe street food",
+        "kopitiam kopi c recipe authentic",
+        "resep kopi keliling viral unik",
+        "resep es kopi susu creamy enak murah",
+        "resep kopi santan gurih"
     ])
     q_idx = history.get("last_query_index", 0) % len(queries)
     query = queries[q_idx]
@@ -169,10 +172,12 @@ ATURAN HARD-BOUNDARY:
    - Gula Aren 30ml (Rp 800)
    - Es batu kristal 150g (Rp 400)
    - Opsional 1 bahan underrated: Santan Kara 25ml (Rp 1.200), Susu Evaporasi Tiga Sapi 30ml (Rp 1.100), Teh Melati pekat 50ml (Rp 500), Sea Salt (Rp 50), Jahe wangi (Rp 800), Cocoa Van Houten (Rp 1.400).
-6. DILARANG KERAS menggunakan bubuk curah kimiawi (Red velvet, taro, bubblegum, permen karet).
-7. Ekstraksi: Wajib tentukan salah satu dari 3 pilar: Street Cold Brew Tubruk Saring Kain, Hot Bloom Flash Chill, atau Frother Crema Hack.
-8. Penyajian: Tentukan urutan penuangan (Method A Layered Visual, Method B Shaken Silky, atau Method C Crema Drop).
-9. Creative Storytelling: Naskah TikTok/Reels wajib feeling-first, gaya bahasa kasual modern pekerja kantoran / Gen Z yang menghadapi realita hidup (gaji, lelah lembur, overthinking, jeda bersyukur), jujur, tidak hard-selling.
+6. INSPIRASI KULTUR STREET COFFEE ASIA / ASIA TENGGARA:
+   Bebas menyerap teknik dan rasa dari street coffee Asia Tenggara (Vietnam Cà phê sữa đá pekat, Cà phê muối / Salted coffee Vietnam, Thai street iced coffee / Oliang, Kopi C / Yuanyang Kopitiam Singapura-Malaysia, atau Coconut coffee Filipina/Thailand). Cita rasanya serumpun (robusta bold, gurih berlemak, manis karamel/kelapa/garam), tapi adaptasikan takaran dan bahannya menggunakan katalog bahan lokal murah kita agar tetap aman di batas HPP <= Rp 6.000.
+7. DILARANG KERAS menggunakan bubuk curah kimiawi (Red velvet, taro, bubblegum, permen karet).
+8. Ekstraksi: Wajib tentukan salah satu dari 3 pilar: Street Cold Brew Tubruk Saring Kain, Hot Bloom Flash Chill, atau Frother Crema Hack.
+9. Penyajian: Tentukan urutan penuangan (Method A Layered Visual, Method B Shaken Silky, atau Method C Crema Drop).
+10. Creative Storytelling: Naskah TikTok/Reels wajib feeling-first, gaya bahasa kasual modern pekerja kantoran / Gen Z yang menghadapi realita hidup (gaji, lelah lembur, overthinking, jeda bersyukur), jujur, tidak hard-selling.
 
 Keluarkan respon HANYA dalam format JSON valid (tanpa markdown wrapper tambahan di luar JSON) dengan struktur persis seperti berikut:
 {{
