@@ -1,48 +1,48 @@
 window.MENU_VAULT = [
   {
     "id": "JRC-001",
-    "name": "Kopi Susu Gula Aren (Signature)",
+    "name": "Kopi Susu Gula Aren (Signature Fast-Bar)",
     "category": "Signature Milk-Based",
     "status": "CANON_MENU",
     "cup_size": "12oz",
     "ice_weight_g": 150,
-    "liquid_volume_ml": 230,
-    "extraction_method": "Hot Bloom Flash Chill (Kopi diseduh 40ml air 90C selama 45 detik, lalu dikejut es)",
-    "pouring_sequence": "Method A (Triple Layer: Gula Aren dasar -> Es 150g -> Milku+Creamer tengah -> Kopi atas)",
+    "liquid_volume_ml": 185,
+    "extraction_method": "Pre-Batch Biang Konsentrat (Kapal Api Super 2 sachet dilarutkan air hangat / 40ml biang konsentrat kulkas)",
+    "pouring_sequence": "Method A Layered Visual (20ml Gula Aren -> 150g Es Batu -> 100ml Milku + 15ml SKM/Santos -> Float 40ml biang kopi)",
     "ingredients": [
       {
-        "item": "Kapal Api Special 6g",
-        "amount": "1 sachet + 80ml air",
-        "cost": 1000
+        "item": "Kapal Api Super Instan (2 sachet / biang)",
+        "amount": "40 ml biang (4.4g kopi)",
+        "cost": 2200
       },
       {
-        "item": "Susu UHT Milku",
-        "amount": "100 ml",
+        "item": "Susu UHT Milku Plain",
+        "amount": "100 ml (1/2 botol)",
         "cost": 1750
       },
       {
-        "item": "Creamer (SKM / Evaporasi)",
-        "amount": "20 ml",
+        "item": "Krimer Santos / Kental Manis",
+        "amount": "20g / 15ml",
         "cost": 700
       },
       {
         "item": "Gula Aren Cair Murni",
-        "amount": "30 ml",
-        "cost": 800
+        "amount": "20 ml",
+        "cost": 550
       },
       {
         "item": "Es Batu Kristal",
         "amount": "150 gram",
-        "cost": 400
+        "cost": 300
       }
     ],
-    "total_hpp": 4650,
+    "total_hpp": 5500,
     "suggested_price": 10000,
-    "gross_margin_pct": 53.5,
-    "taste_notes": "Bold robusta kick, body tebal gurih berlemak dari Milku, manis legit karamel aren. Selera Indonesia tulen.",
+    "gross_margin_pct": 45.0,
+    "taste_notes": "Bold robusta kick dengan crema alami keemasan, body tebal gurih berlemak dari Milku dan krimer, manis legit karamel aren. 100% bebas ampas.",
     "creative_concept": {
       "theme": "The Grounded Sanctuary",
-      "visual_hook": "Macro slow-mo susu Milku membelah lapisan hitam pekat kopi, es batu bergemerincing",
+      "visual_hook": "Macro slow-mo susu Milku membelah lapisan hitam pekat biang kopi, es batu bergemerincing",
       "voiceover": "Gaji UMR, kerjaan nggak kelar-kelar, jalanan macet. Nggak semua orang sanggup beli ketenangan seharga 50 ribu di coffee shop ber-AC. Cukup melipir 10 menit ke pinggir jalan, pegang cup dingin 10 ribu ini, narik napas... besok kita coba lagi.",
       "audio_cue": "Denting es batu kristal di cup 12oz + lofi rainy beat"
     },
@@ -55,9 +55,9 @@ window.MENU_VAULT = [
     "status": "CANON_MENU",
     "cup_size": "12oz",
     "ice_weight_g": 150,
-    "liquid_volume_ml": 200,
-    "extraction_method": "Instant Quick Dissolve (Good Day dilarutkan dalam 80ml air hangat 75C)",
-    "pouring_sequence": "Method B (Shaken Silky: Kopi vanilla + Milku + Creamer di-shake bersama separuh es, lalu dituang ke cup es segar)",
+    "liquid_volume_ml": 195,
+    "extraction_method": "Instant Quick Dissolve (Good Day Vanilla dilarutkan dalam 80ml air hangat 75C)",
+    "pouring_sequence": "Method B (Shaken Silky: Kopi vanilla + Milku + Creamer di-shake bersama es, lalu dituang ke cup 12oz)",
     "ingredients": [
       {
         "item": "Good Day Vanilla Latte",
@@ -65,24 +65,24 @@ window.MENU_VAULT = [
         "cost": 2000
       },
       {
-        "item": "Susu UHT Milku",
+        "item": "Susu UHT Milku Plain",
         "amount": "100 ml",
         "cost": 1750
       },
       {
-        "item": "Creamer",
-        "amount": "20 ml",
-        "cost": 700
+        "item": "Kental Manis (Creamer)",
+        "amount": "15 ml",
+        "cost": 500
       },
       {
         "item": "Es Batu Kristal",
         "amount": "150 gram",
-        "cost": 400
+        "cost": 300
       }
     ],
-    "total_hpp": 4850,
-    "suggested_price": 11000,
-    "gross_margin_pct": 55.9,
+    "total_hpp": 4550,
+    "suggested_price": 10000,
+    "gross_margin_pct": 54.5,
     "taste_notes": "Wangi vanila semerbak, manis lembut creamy, sangat ramah untuk peminum kopi kasual.",
     "creative_concept": {
       "theme": "The Honest Alchemist",
@@ -94,198 +94,330 @@ window.MENU_VAULT = [
   },
   {
     "id": "JRC-003",
-    "name": "Robusta Americano Crema Drop",
+    "name": "Caramel Creamy Latte (Fast-Bar)",
+    "category": "Dessert Coffee",
+    "status": "CANON_MENU",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 185,
+    "extraction_method": "Pre-Batch Biang / Instan Dissolve (Kapal Api Super 2 sachet dilarutkan 50ml air / 40ml biang kopi)",
+    "pouring_sequence": "Method B/A (Saus Karamel Morin + Kental Manis di dasar, tuang Milku dingin dan es batu, float biang kopi berbusa)",
+    "ingredients": [
+      {
+        "item": "Kapal Api Super Instan",
+        "amount": "2 sachet (40ml biang)",
+        "cost": 2200
+      },
+      {
+        "item": "Susu UHT Milku Plain",
+        "amount": "100 ml",
+        "cost": 1750
+      },
+      {
+        "item": "Kental Manis",
+        "amount": "15 ml",
+        "cost": 450
+      },
+      {
+        "item": "Saus Karamel (Morin Topping)",
+        "amount": "10-12 gram",
+        "cost": 900
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150 gram",
+        "cost": 250
+      }
+    ],
+    "total_hpp": 5550,
+    "suggested_price": 11000,
+    "gross_margin_pct": 49.5,
+    "taste_notes": "Aroma saus karamel legit menonjol, creamy tebal gurih, rasa kopi tetap seimbang di tengah tanpa ampas.",
+    "creative_concept": {
+      "theme": "The Honest Alchemist",
+      "visual_hook": "Spiral saus karamel pekat di dinding cup mika, disiram susu Milku dingin dan foam espresso instan",
+      "voiceover": "Nggak ketahuan ini kopi sachet. Gurihnya dapet, aroma karamelnya berani, kopinya tetep ada di tengah. Yang bikin enak bukan harga bahannya, tapi kejujuran takarannya.",
+      "audio_cue": "Saus karamel meluncur di dinding cup + ASMR adukan es"
+    },
+    "created_at": "2026-11-06T10:00:00+07:00"
+  },
+  {
+    "id": "JRC-004",
+    "name": "Robusta Americano Dingin",
     "category": "Black Coffee",
     "status": "CANON_MENU",
     "cup_size": "12oz",
     "ice_weight_g": 150,
-    "liquid_volume_ml": 200,
-    "extraction_method": "Hand Frother Crema Hack (Nescafe Classic / Kapal Api Super di-froth dengan 40ml air hangat hingga crema keemasan keluar)",
-    "pouring_sequence": "Method C (Crema Drop: Es 150g + air dingin 120ml diisi dulu, lalu biang kopi bercrema dituangkan di atas)",
+    "liquid_volume_ml": 180,
+    "extraction_method": "Cold Dissolve / Biang Konsentrat (Kapal Api Super 2 sachet dilarutkan air dingin atau tuang 40ml biang)",
+    "pouring_sequence": "Method C (Crema Drop: Es 150g dipadatkan -> tuang air dingin 140ml -> float 40ml biang kopi bercrema)",
     "ingredients": [
       {
-        "item": "Nescafe Classic / Kapal Api Super",
-        "amount": "2.2g instan + 40ml air",
-        "cost": 1200
+        "item": "Kapal Api Super Instan",
+        "amount": "2 sachet (40ml biang)",
+        "cost": 2200
       },
       {
         "item": "Air Mineral Dingin",
+        "amount": "140 ml",
+        "cost": 0
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150 gram",
+        "cost": 300
+      }
+    ],
+    "total_hpp": 2500,
+    "suggested_price": 7000,
+    "gross_margin_pct": 64.3,
+    "taste_notes": "Pahit bersih tegas, asam buah tipis menyegarkan khas Robusta Super, crema keemasan mengapung, zero ampas.",
+    "creative_concept": {
+      "theme": "The Honest Craft",
+      "visual_hook": "Awan hitam kopi meluncur menembus sela-sela es kristal dan air jernih dingin",
+      "voiceover": "Tanpa susu, tanpa gula, tanpa kepura-puraan. Buat lo yang butuh kepala dingin dan mata melek buat nyelesaiin tanggung jawab hari ini. Kopi murni tujuh ribu perak di emperan jalan.",
+      "audio_cue": "Denting es batu tajam + hening deru angin jalanan"
+    },
+    "created_at": "2026-11-06T00:00:00+07:00"
+  },
+  {
+    "id": "JRC-005",
+    "name": "Apple Americano (Signature Fresh)",
+    "category": "Fruit Mocktail",
+    "status": "CANON_MENU",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 185,
+    "extraction_method": "Single Shot Biang (Kapal Api Super 1 sachet dilarutkan 40ml air atau 20ml biang konsentrat)",
+    "pouring_sequence": "Method A Ombre Two-Layer (25ml Sirup DRiPP Apple di dasar -> Es 150g -> 120ml Air Dingin -> Float 20ml biang kopi)",
+    "ingredients": [
+      {
+        "item": "Kapal Api Super Instan",
+        "amount": "1 sachet (20ml biang)",
+        "cost": 1100
+      },
+      {
+        "item": "Sirup DRiPP Malang Apple",
+        "amount": "25 ml",
+        "cost": 3090
+      },
+      {
+        "item": "Air Mineral Dingin",
+        "amount": "120 ml",
+        "cost": 0
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150 gram",
+        "cost": 300
+      }
+    ],
+    "total_hpp": 4490,
+    "suggested_price": 10000,
+    "gross_margin_pct": 55.1,
+    "taste_notes": "Asam-manis segar wangi apel Malang alami yang renyah berpadu harmonis dengan bitter clean robusta. Sangat melegakan di siang terik.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Gradasi 2 warna memukau: hijau kekuningan sirup apel di dasar, cokelat mahoni kopi dingin di atas",
+      "voiceover": "Panas terik aspal jalanan, kepala udah pening. Mau ngopi tapi ogah yang enek bersusu. Apple Americano sepuluh ribu: manis asemnya buah apel Malang langsung motong dahaga, harum kopinya bikin melek seketika.",
+      "audio_cue": "Sedotan plastik menembus layer sirup dan es (ASMR)"
+    },
+    "created_at": "2026-11-06T11:00:00+07:00"
+  },
+  {
+    "id": "JRC-006",
+    "name": "Peach Jasmine Americano (Shaken)",
+    "category": "Fruit Mocktail",
+    "status": "CANON_MENU",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 170,
+    "extraction_method": "Floral Cold Shake (120ml Teh Melati Pekat dingin + 20ml DRiPP Peach + 20ml Biang Kopi di-shake es 10 detik)",
+    "pouring_sequence": "Method B (Shaken Silky Foam: Dikocok kuat di shaker plastik sampai keluar microfoam tebal, langsung tuang ke cup 12oz)",
+    "ingredients": [
+      {
+        "item": "Kapal Api Super Instan",
+        "amount": "1 sachet (20ml biang)",
+        "cost": 1100
+      },
+      {
+        "item": "Sirup DRiPP Peach",
+        "amount": "20 ml",
+        "cost": 2470
+      },
+      {
+        "item": "Seduhan Teh Melati Pekat Dingin",
         "amount": "120 ml",
         "cost": 300
       },
       {
         "item": "Es Batu Kristal",
         "amount": "150 gram",
-        "cost": 400
+        "cost": 300
       }
     ],
-    "total_hpp": 1900,
-    "suggested_price": 7000,
-    "gross_margin_pct": 72.8,
-    "taste_notes": "Pahit segar bersih tanpa ampas, crema mengapung lembut di bibir, kafein murni penghilang kantuk.",
-    "creative_concept": {
-      "theme": "The Honest Craft",
-      "visual_hook": "Crema keemasan tebal dituangkan perlahan di atas bongkahan es dan air bening",
-      "voiceover": "Tanpa susu, tanpa gula, tanpa topeng. Buat lo yang butuh kepala dingin dan mata melek buat nyelesaiin tanggung jawab hari ini. Kopi murni tujuh ribu perak di emperan jalan.",
-      "audio_cue": "Denting es batu + hening angin sore jalanan"
-    },
-    "created_at": "2026-11-06T00:00:00+07:00"
-  },
-  {
-    "id": "JRC-004",
-    "name": "Kopi Cham Melati Senja",
-    "category": "Signature",
-    "status": "STAGE 1: SIMULATED",
-    "cup_size": "12oz",
-    "ice_weight_g": 150,
-    "liquid_volume_ml": 200,
-    "extraction_method": "Hot Bloom Flash Chill: Daun teh melati diekstrak pekat menggunakan metode tubruk saring kain tradisional, sementara 2g Nescafe Classic di-blooming dengan 30ml air panas suhu 90°C selama 30 detik untuk mengunci aroma earthy robusta sebelum disatukan dingin agar wangi floral melati tetap utuh.",
-    "pouring_sequence": "Method A Layered Visual: 1) Tuang 20ml gula aren murni ke dasar cup 12oz. 2) Masukkan campuran 50ml konsentrat teh melati, 100ml Susu Milku, dan 20ml susu evaporasi yang sudah di-stir merata menghasilkan lapisan milk-tea keemasan. 3) Masukkan 150g es batu kristal perlahan memadati cup. 4) Tuangkan perlahan 30ml blooming Nescafe Classic di atas es batu untuk menghasilkan visual split layer sunset 3 warna kontras.",
-    "ingredients": [
-      {
-        "item": "Nescafe Classic",
-        "amount": "2g (30ml hot water)",
-        "cost": 1200
-      },
-      {
-        "item": "Teh Melati Pekat (Saring Kain)",
-        "amount": "50ml",
-        "cost": 500
-      },
-      {
-        "item": "Susu Milku",
-        "amount": "100ml",
-        "cost": 1750
-      },
-      {
-        "item": "Susu Evaporasi Tiga Sapi",
-        "amount": "20ml",
-        "cost": 750
-      },
-      {
-        "item": "Gula Aren",
-        "amount": "20ml",
-        "cost": 550
-      },
-      {
-        "item": "Es Batu Kristal",
-        "amount": "150g",
-        "cost": 400
-      }
-    ],
-    "total_hpp": 5150,
-    "suggested_price": 11000,
-    "gross_margin_pct": 53.2,
-    "taste_notes": "Aromatik floral bunga melati yang menenangkan saat pertama dihirup, body silky-creamy gurih dari perpaduan Milku dan evaporasi, ditutup aftertaste pahit tegas kopi robusta dengan sweetness legit karamel aren.",
+    "total_hpp": 4170,
+    "suggested_price": 10000,
+    "gross_margin_pct": 58.3,
+    "taste_notes": "Aroma bunga melati menenangkan hati, manis harum buah persik (peach) semerbak, kopi hitam enteng dengan mahkota busa dingin tebal.",
     "creative_concept": {
       "theme": "The Honest Alchemist",
-      "visual_hook": "Detik 00:00-00:02: Tangan melepas lanyard ID card kantor yang dilempar ke meja, langsung cut ekstrem ke kucuran hitam kopi pekat menabrak layer susu teh melati yang mengalir perlahan di sela es batu.",
-      "voiceover": "Jam enam sore. Otak udah mendidih sama revisi dadakan, tapi fisik nggak boleh tumbang. Mau teh biar tenang, tapi butuh kopi biar tetap waras. Akhirnya kita campur keduanya: Kopi Cham Melati. Cuma sebelas ribu, tapi rasanya kayak jeda lima belas menit paling jujur hari ini. Pelan-pelan ya, lu udah bertahan hebat.",
-      "audio_cue": "Suara benturan lanyard di meja, crackling es batu saat disiram kopi cair (ASMR renyah), disambung alunan lofi chillhop akustik tempo 75 BPM."
+      "visual_hook": "Busa tebal keemasan hasil kocokan shaker mengalir lembut menutupi cup 12oz",
+      "voiceover": "Buat lo yang sering bilang americano itu kepahitan: cobain Peach Jasmine Americano ini. Wangi teh melati yang adem ketemu manisnya buah peach, dikocok dingin bareng robusta. Kopi jalanan rasa kafe bintang lima.",
+      "audio_cue": "Kocokan ritmis cocktail shaker es batu + suara tuangan berbusa halus"
     },
-    "created_at": "2026-11-06T01:23:45.932408"
+    "created_at": "2026-11-06T11:30:00+07:00"
   },
   {
-    "id": "JRC-005",
+    "id": "JRC-007",
     "name": "Street Mocha Beng-Beng Sea Salt",
     "category": "Dessert Coffee",
-    "status": "STAGE 1: SIMULATED",
+    "status": "CANON_MENU",
     "cup_size": "12oz",
     "ice_weight_g": 150,
-    "liquid_volume_ml": 195,
-    "extraction_method": "Frother Crema Hack: 2.2g Kapal Api Super Instan dilarutkan bersama 1 sachet Beng-Beng Drink dan sejumput sea salt dalam 95ml air panas 85°C, lalu di-froth selama 15 detik sampai mengembang membentuk foam moka berkarakter micro-crema yang glossy dan kental.",
-    "pouring_sequence": "Method A Layered Visual: Tuang 100ml Susu Milku dingin ke dasar cup 12oz. Masukkan 150g es batu kristal perlahan hingga padat. Tuang perlahan larutan Mocha Malt Kopi berbusa di atas es batu untuk menciptakan kontras layer cokelat pekat di atas putih susu.",
+    "liquid_volume_ml": 180,
+    "extraction_method": "Hot Dissolve Malt (Beng-Beng Drink 30g + sejumput sea salt dilarutkan 50ml air panas, di-froth 5 detik)",
+    "pouring_sequence": "Method A Layered Visual (100ml Milku di dasar -> 150g Es Batu -> Float Biang Mocha Kopi cokelat pekat di atas es)",
     "ingredients": [
+      {
+        "item": "Kapal Api Super Instan",
+        "amount": "1 sachet / 20ml biang",
+        "cost": 1100
+      },
       {
         "item": "Beng-Beng Drink",
         "amount": "1 sachet (30g)",
         "cost": 2000
       },
       {
-        "item": "Kapal Api Super Instan",
-        "amount": "1 sachet (2.2g)",
-        "cost": 1000
-      },
-      {
-        "item": "Susu Milku UHT Plain",
-        "amount": "100ml",
+        "item": "Susu UHT Milku Plain",
+        "amount": "100 ml",
         "cost": 1750
       },
       {
-        "item": "Sea Salt",
-        "amount": "0.5g",
+        "item": "Sea Salt / Garam Dapur",
+        "amount": "0.5 gram",
         "cost": 50
       },
       {
         "item": "Es Batu Kristal",
-        "amount": "150g",
-        "cost": 400
+        "amount": "150 gram",
+        "cost": 300
       }
     ],
     "total_hpp": 5200,
-    "suggested_price": 10000,
-    "gross_margin_pct": 48.0,
-    "taste_notes": "Dominan chocolate malt dan wafer gurih khas Beng-Beng, diimbangi pahit tegas robusta murni, creamy susu UHT, serta rounded aftertaste gurih berkat sentuhan sea salt yang memotong rasa enek.",
+    "suggested_price": 11000,
+    "gross_margin_pct": 52.7,
+    "taste_notes": "Cokelat malt wafer gurih karamel berpadu pahit robusta, dipertegas gurih asin sea salt yang memotong rasa enek. Selera dessert premium jalanan.",
     "creative_concept": {
       "theme": "The Honest Alchemist",
-      "visual_hook": "Close-up slow-motion penuangan moka cokelat pekat berbusa tebal yang perlahan turun membelah es batu dan susu putih Milku. Teks hook di layar: 'CAFE JUAL 38 RIBU, GEROBAK JUAL 10 RIBU. UNTUNGNYA DARI MANA?'",
-      "voiceover": "Pernah mikir nggak, kenapa es moka di mall bisa hampir 40 ribu, tapi di pinggir jalan ada yang bisa jual 10 ribu dan rasanya tetep masuk akal? Di cafe estetik, yang kita bayar itu sofa empuk, AC dingin, sama gengsi. Di gerobak Jericho, lo cuma bayar rasa yang jujur: robusta murni, lelehan cokelat malt Beng-Beng, susu dingin, plus sejumput sea salt biar manisnya nggak giung. Untungnya tipis? Banget. Tapi buat kita yang seharian diperas revisi dan gaji numpang lewat, segelas moka dingin sepuluh ribu ini bukan soal margin... tapi jeda napas yang nggak bikin dompet ngerasa bersalah.",
-      "audio_cue": "ASMR desis hand-frother mini, gemerincing es batu jatuh ke cup mika tebal, sedotan menusuk lid cup, diiringi alunan lofi jazzy mellow bertempo 75 BPM dengan vinyl crackle halus."
+      "visual_hook": "Penuangan moka cokelat pekat berbusa tebal perlahan turun membelah es batu dan susu putih Milku",
+      "voiceover": "Di cafe estetik, es moka bisa 40 ribu. Di gerobak Jericho, lo cuma bayar rasa yang jujur: robusta murni, cokelat malt Beng-Beng, susu dingin, plus sejumput sea salt biar nggak giung. Bukan soal gengsi, tapi jeda napas yang ramah di kantong.",
+      "audio_cue": "ASMR desis hand-frother mini + gemerincing es batu jatuh ke cup"
     },
-    "created_at": "2026-11-06T01:29:14.121217"
+    "created_at": "2026-11-06T12:00:00+07:00"
   },
   {
-    "id": "JRC-006",
-    "name": "Kopi Saigon Street Sữa Đá",
-    "category": "Signature",
-    "status": "STAGE 1: SIMULATED",
+    "id": "JRC-008",
+    "name": "Cookies & Cream Street Latte",
+    "category": "Dessert Coffee",
+    "status": "CANON_MENU",
     "cup_size": "12oz",
     "ice_weight_g": 150,
-    "liquid_volume_ml": 200,
-    "extraction_method": "Hot Bloom Flash Chill: 6g Kapal Api Special diseduh 60ml air mendidih (95°C) selama 3 menit untuk meniru ekstraksi pekat drip Phin Vietnam, disaring kain rapat hingga menghasilkan 50ml konsentrat Robusta pekat bersuhu ruang.",
-    "pouring_sequence": "Method A Layered Visual: Masukkan gula aren 25ml, susu evaporasi 30ml, dan sejumput sea salt di dasar cup lalu aduk rata sebagai base kental. Tuang Susu Milku 100ml secara perlahan. Masukkan es batu kristal 150g hingga bibir cup. Float 50ml konsentrat Robusta pekat di layer paling atas.",
+    "liquid_volume_ml": 165,
+    "extraction_method": "Split-Texture Craft (1 keping biskuit diremas halus di-froth bareng Milku & SKM, 1 keping diremas kasar jadi crunchy topping)",
+    "pouring_sequence": "Teknik A (Tuang cookies milk abu-abu di dasar -> padatkan es batu 150g -> float 25ml biang kopi -> taburi topping remah biskuit di atas es)",
     "ingredients": [
       {
-        "item": "Kapal Api Special (Ekstraksi 50ml)",
-        "amount": "6g",
-        "cost": 1000
-      },
-      {
-        "item": "Susu Milku",
-        "amount": "100ml",
-        "cost": 1750
-      },
-      {
-        "item": "Susu Evaporasi Tiga Sapi",
-        "amount": "30ml",
+        "item": "Kapal Api Super Instan",
+        "amount": "1 sachet / 25ml biang",
         "cost": 1100
       },
       {
-        "item": "Gula Aren",
-        "amount": "25ml",
-        "cost": 700
+        "item": "Susu UHT Milku Plain",
+        "amount": "100 ml",
+        "cost": 1750
       },
       {
-        "item": "Sea Salt",
-        "amount": "0.5g",
-        "cost": 50
+        "item": "Kental Manis (SKM)",
+        "amount": "15 ml",
+        "cost": 500
+      },
+      {
+        "item": "Simple Syrup / Aren",
+        "amount": "10 ml",
+        "cost": 200
+      },
+      {
+        "item": "Biskuit Hitam (Go! Rio-Rio / Oreo)",
+        "amount": "1 bungkus (2 keping)",
+        "cost": 600
       },
       {
         "item": "Es Batu Kristal",
-        "amount": "150g",
-        "cost": 400
+        "amount": "150 gram",
+        "cost": 300
       }
     ],
-    "total_hpp": 5000,
+    "total_hpp": 4450,
     "suggested_price": 10000,
-    "gross_margin_pct": 50.0,
-    "taste_notes": "Robusta smoky-dark cocoa tebal khas street coffee Vietnam, diimbangi tekstur milky gurih karamel dari evaporasi dan sentuhan asin tipis yang memotong enek.",
+    "gross_margin_pct": 55.5,
+    "taste_notes": "Sensasi cookies & cream gurih legit, aroma vanilla biskuit menyatu ke susu dingin, diimbangi pahit kopi hitam dan sensasi renyah crunchy biskuit di puncak.",
+    "creative_concept": {
+      "theme": "The Honest Alchemist",
+      "visual_hook": "Remahan kasar biskuit hitam ditaburkan di atas busa es kopi dingin, lalu diseruput pakai sedotan boba",
+      "voiceover": "Siapa bilang cookies and cream latte harus mahal? Modal biskuit warung ketemu takaran susu 100ml dan biang robusta, jadilah segelas kopi biskuit renyah sepuluh ribu perak. Manisnya pas, renyahnya dapet, dompet tetep aman.",
+      "audio_cue": "Suara remasan biskuit garing (crunchy ASMR) + denting es batu"
+    },
+    "created_at": "2026-11-06T12:30:00+07:00"
+  },
+  {
+    "id": "JRC-009",
+    "name": "Blueberry Honey Americano",
+    "category": "Fruit Mocktail",
+    "status": "CANON_MENU",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 175,
+    "extraction_method": "Artisanal Cold Pour (80ml Jus Blueberry + 20ml Madu diaduk di dasar cup, es 150g, 50ml air, float 25ml biang kopi)",
+    "pouring_sequence": "Method A Ombre Two-Color (Dasar ungu tua blueberry madu -> es padat 150g -> air dingin 50ml -> float 25ml biang Kapal Api Super)",
+    "ingredients": [
+      {
+        "item": "Kapal Api Super Instan",
+        "amount": "1 sachet (25ml biang)",
+        "cost": 1100
+      },
+      {
+        "item": "Jus Blueberry (Diamond / Buavita)",
+        "amount": "80 ml",
+        "cost": 2600
+      },
+      {
+        "item": "Madu Alami (Madurasa / Multiflora)",
+        "amount": "20 ml",
+        "cost": 1100
+      },
+      {
+        "item": "Air Mineral Dingin",
+        "amount": "50 ml",
+        "cost": 0
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150 gram",
+        "cost": 300
+      }
+    ],
+    "total_hpp": 5100,
+    "suggested_price": 12000,
+    "gross_margin_pct": 57.5,
+    "taste_notes": "Rasa asam segar buah beri gelap berpadu manis madu bunga alami dan aroma kopi robusta bersih tanpa ampas. Elegan dan menyegarkan.",
     "creative_concept": {
       "theme": "The Grounded Sanctuary",
-      "visual_hook": "Macro close-up: Tetesan konsentrat hitam pekat menerobos retakan es kristal, perlahan tenggelam menyatu ke layer susu kental putih di dasar cup.",
-      "voiceover": "Jam lima sore, revisi masih jalan, kepala udah mau meledak. Kadang yang kita butuh bukan validasi bos, cuma jeda lima menit di pinggir jalan... segelas kopi hitam pekat yang berani nabrak manisnya susu kental. Pahitnya dapet, manisnya jujur, hidup lanjut lagi.",
-      "audio_cue": "Clinking es batu tajam di awal (ASMR), suara tetesan kopi kental, transisi ke lofi beat slow-tempo hangat tanpa vokal."
+      "visual_hook": "Gradasi warna ungu gelap ruby di dasar cup pelan-pelan tertimpa awan hitam pekat kopi dingin",
+      "voiceover": "Siang bolong, kepala udah panas sama deadline. Kadang kita butuh yang seger tapi nggak mau rasa kopi yang hilang. Jus blueberry ketemu madu murni dan robusta dingin. Asam manisnya nendang, pahitnya jujur, bikin fokus balik lagi.",
+      "audio_cue": "Denting es batu kristal + suara madu kental dituangkan pelan (ASMR)"
     },
-    "created_at": "2026-11-06T07:31:30.265120"
+    "created_at": "2026-11-06T13:00:00+07:00"
   }
 ];
