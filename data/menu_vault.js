@@ -233,5 +233,59 @@ window.MENU_VAULT = [
       "audio_cue": "ASMR desis hand-frother mini, gemerincing es batu jatuh ke cup mika tebal, sedotan menusuk lid cup, diiringi alunan lofi jazzy mellow bertempo 75 BPM dengan vinyl crackle halus."
     },
     "created_at": "2026-11-06T01:29:14.121217"
+  },
+  {
+    "id": "JRC-006",
+    "name": "Kopi Saigon Street Sữa Đá",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 200,
+    "extraction_method": "Hot Bloom Flash Chill: 6g Kapal Api Special diseduh 60ml air mendidih (95°C) selama 3 menit untuk meniru ekstraksi pekat drip Phin Vietnam, disaring kain rapat hingga menghasilkan 50ml konsentrat Robusta pekat bersuhu ruang.",
+    "pouring_sequence": "Method A Layered Visual: Masukkan gula aren 25ml, susu evaporasi 30ml, dan sejumput sea salt di dasar cup lalu aduk rata sebagai base kental. Tuang Susu Milku 100ml secara perlahan. Masukkan es batu kristal 150g hingga bibir cup. Float 50ml konsentrat Robusta pekat di layer paling atas.",
+    "ingredients": [
+      {
+        "item": "Kapal Api Special (Ekstraksi 50ml)",
+        "amount": "6g",
+        "cost": 1000
+      },
+      {
+        "item": "Susu Milku",
+        "amount": "100ml",
+        "cost": 1750
+      },
+      {
+        "item": "Susu Evaporasi Tiga Sapi",
+        "amount": "30ml",
+        "cost": 1100
+      },
+      {
+        "item": "Gula Aren",
+        "amount": "25ml",
+        "cost": 700
+      },
+      {
+        "item": "Sea Salt",
+        "amount": "0.5g",
+        "cost": 50
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5000,
+    "suggested_price": 10000,
+    "gross_margin_pct": 50.0,
+    "taste_notes": "Robusta smoky-dark cocoa tebal khas street coffee Vietnam, diimbangi tekstur milky gurih karamel dari evaporasi dan sentuhan asin tipis yang memotong enek.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Macro close-up: Tetesan konsentrat hitam pekat menerobos retakan es kristal, perlahan tenggelam menyatu ke layer susu kental putih di dasar cup.",
+      "voiceover": "Jam lima sore, revisi masih jalan, kepala udah mau meledak. Kadang yang kita butuh bukan validasi bos, cuma jeda lima menit di pinggir jalan... segelas kopi hitam pekat yang berani nabrak manisnya susu kental. Pahitnya dapet, manisnya jujur, hidup lanjut lagi.",
+      "audio_cue": "Clinking es batu tajam di awal (ASMR), suara tetesan kopi kental, transisi ke lofi beat slow-tempo hangat tanpa vokal."
+    },
+    "created_at": "2026-11-06T07:31:30.265120"
   }
 ];
