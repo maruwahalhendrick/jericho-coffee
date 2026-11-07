@@ -289,7 +289,7 @@ Kategori: {new_recipe['category']} | Status: `{new_recipe['status']}`
 📋 *Komposisi & HPP Breakdown:*
 {ings_text}
 ───────────────────────
-💰 *Total HPP:* *Rp {new_recipe['total_hpp']:,}* (Lolos Audit $\le$ 6rb)
+💰 *Total HPP:* *Rp {new_recipe['total_hpp']:,}* (Lolos Audit <= 6rb)
 🏷️ *Rekomendasi Jual:* *Rp {new_recipe['suggested_price']:,}* (Margin: ~{new_recipe['gross_margin_pct']:.1f}%)
 
 ⚗️ *Teknik Ekstraksi:*
