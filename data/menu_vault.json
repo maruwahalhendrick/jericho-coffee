@@ -473,5 +473,59 @@
       "audio_cue": "00:00 ASMR denting es batu beradu cup plastik, desis tetesan susu kental, dilanjutkan lofi beat hangat tempo 72 bpm tanpa lirik."
     },
     "created_at": "2026-11-07T09:03:32.799690"
+  },
+  {
+    "id": "JRC-011",
+    "name": "Saigon Sea Salt Cream Latte",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 200,
+    "extraction_method": "Hot Bloom Flash Chill (6g Kapal Api Special diekstraksi dengan 50ml air mendidih 95°C selama 45 detik untuk menangkap body tebal dan dark chocolate khas robusta Vietnam, disaring kain saring rapat langsung di atas shaker dingin)",
+    "pouring_sequence": "Method A Layered Visual: Tuang 20ml Gula Aren di dasar cup -> Masukkan es batu kristal 150g -> Tuang Susu Milku 100ml -> Tuang pelan ekstrak kopi 50ml -> Floating top layer: 30ml Susu Evaporasi Tiga Sapi + Sea Salt yang telah di-froth 10 detik hingga microfoam kaku",
+    "ingredients": [
+      {
+        "item": "Kapal Api Special 6g",
+        "amount": "6g",
+        "cost": 1000
+      },
+      {
+        "item": "Susu Milku Original",
+        "amount": "100ml",
+        "cost": 1750
+      },
+      {
+        "item": "Susu Evaporasi Tiga Sapi",
+        "amount": "30ml",
+        "cost": 1100
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "20ml",
+        "cost": 600
+      },
+      {
+        "item": "Sea Salt",
+        "amount": "0.5g",
+        "cost": 50
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 4900,
+    "suggested_price": 10000,
+    "gross_margin_pct": 51.0,
+    "taste_notes": "Bold dark roast Robusta dengan sentuhan earthy-caramel, diimbangi manis legit aren dan sensasi gurih asin creamy yang tebal dari salted foam di setiap tegukan pertama",
+    "creative_concept": {
+      "theme": "The Honest Alchemist",
+      "visual_hook": "Detik 00:00-00:03 Macro shot foam putih gurih dituang di atas kopi pekat, cascading turun perlahan membelah es batu, ditutup taburan micro pinch sea salt.",
+      "voiceover": "Hidup kadang kebanyakan paitnya, persis kayak robusta tubruk jam sembilan pagi. Tapi orang Vietnam bener; kopi pait nggak selalu harus ditutup gula kebanyakan. Cukup kasih sedikit rasa asin, gurihnya langsung keluar. Sepuluh ribu buat ngingetin diri sendiri: hal-hal berat di kepala hari ini, sebenernya cuma butuh sudut pandang yang pas biar kerasa masuk akal. Tarik napas dulu.",
+      "audio_cue": "Lo-fi piano beat hangat tempo 75 bpm dengan sound effect renyah es batu jatuh dan desis microfoam saat disendok."
+    },
+    "created_at": "2026-11-07T09:04:43.219215"
   }
 ]
