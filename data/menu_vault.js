@@ -419,5 +419,59 @@ window.MENU_VAULT = [
       "audio_cue": "Denting es batu kristal + suara madu kental dituangkan pelan (ASMR)"
     },
     "created_at": "2026-11-06T13:00:00+07:00"
+  },
+  {
+    "id": "JRC-010",
+    "name": "Thai Street Kafae Yen",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 200,
+    "extraction_method": "Hot Bloom Flash Chill: 6g Kapal Api Special diseduh 60ml air mendidih (95C), blooming 90 detik untuk menarik deep smoky body & natural dark cocoa, disaring kain saringan street-style hingga menghasilkan 50ml konsentrat pekat bersih ampas.",
+    "pouring_sequence": "Method A Layered Visual: Masukkan 20ml Gula Aren dan 15ml Creamer cair di dasar cup -> Tuang 100ml Susu Milku dan aduk rata -> Masukkan 150g es batu kristal padat hingga bibir cup -> Tuang perlahan 50ml ekstrak kopi pekat -> Float 30ml Susu Evaporasi Tiga Sapi di lapisan paling atas membentuk cascading marble.",
+    "ingredients": [
+      {
+        "item": "Kapal Api Special 6g",
+        "amount": "6g",
+        "cost": 1000
+      },
+      {
+        "item": "Susu Milku",
+        "amount": "100ml",
+        "cost": 1750
+      },
+      {
+        "item": "Susu Evaporasi Tiga Sapi",
+        "amount": "30ml",
+        "cost": 1100
+      },
+      {
+        "item": "Gula Aren",
+        "amount": "20ml",
+        "cost": 600
+      },
+      {
+        "item": "Creamer",
+        "amount": "15ml",
+        "cost": 500
+      },
+      {
+        "item": "Es batu kristal",
+        "amount": "150g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5350,
+    "suggested_price": 12000,
+    "gross_margin_pct": 55.4,
+    "taste_notes": "Bold robusta roasty khas gerobak Bangkok, gurih creamy susu evaporasi tebal, diimbangi manis legit aren dengan aftertaste dark chocolate yang bersih.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Detik 00:00-00:02: Close-up macro susu evaporasi kental putih dingin dituangkan di atas es batu dan kopi hitam pekat, membentuk efek awan marble yang jatuh perlahan.",
+      "voiceover": "Jam tiga sore. Kepala penuh revisi, spreadsheet belum selesai, dan gaji masih dua minggu lagi. Dunia nggak bakal runtuh cuma karena lu berhenti sepuluh menit. Kopi jalanan Bangkok ini bold, gurih, dan jujur—ngingetin lu kalau bertahan hari ini aja udah cukup keren. Tarik napas, lanjut pelan-pelan.",
+      "audio_cue": "00:00 ASMR denting es batu beradu cup plastik, desis tetesan susu kental, dilanjutkan lofi beat hangat tempo 72 bpm tanpa lirik."
+    },
+    "created_at": "2026-11-07T09:03:32.799690"
   }
 ];
