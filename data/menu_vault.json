@@ -527,5 +527,54 @@
       "audio_cue": "Lo-fi piano beat hangat tempo 75 bpm dengan sound effect renyah es batu jatuh dan desis microfoam saat disendok."
     },
     "created_at": "2026-11-07T09:04:43.219215"
+  },
+  {
+    "id": "JRC-012",
+    "name": "Hanoi Coconut Cream Latte",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 200,
+    "extraction_method": "Hot Bloom Flash Chill: Seduh 2g Nescafe Classic dengan 45ml air panas 90°C, aduk cepat hingga larut pekat menghasilkan konsentrat dark robusta ala Vietnam drip, lalu dinginkan kilat di atas es.",
+    "pouring_sequence": "Method A Layered Visual: Masukkan 30ml Gula Aren di dasar cup 12oz, tuang 150g es batu kristal perlahan, tuangkan pre-mix 100ml Susu Milku dan 25ml Santan Kara yang sudah diaduk rata, lalu float konsentrat 45ml kopi di layer paling atas.",
+    "ingredients": [
+      {
+        "item": "Nescafe Classic",
+        "amount": "2g (larut 45ml air)",
+        "cost": 1200
+      },
+      {
+        "item": "Susu Milku",
+        "amount": "100ml",
+        "cost": 1750
+      },
+      {
+        "item": "Santan Kara",
+        "amount": "25ml",
+        "cost": 1200
+      },
+      {
+        "item": "Gula Aren",
+        "amount": "30ml",
+        "cost": 800
+      },
+      {
+        "item": "Es batu kristal",
+        "amount": "150g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5350,
+    "suggested_price": 12000,
+    "gross_margin_pct": 55.4,
+    "taste_notes": "Robusta bold berkarakter earthy, gurih creamy santan kelapa yang legit seimbang, sentuhan manis karamel aren, serta aftertaste nutty yang panjang dan bersih.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Macro slow-motion: Kontras warna putih pekat susu kelapa saat tertembus kucuran kopi hitam pekat di sela-sela es batu kristal yang berembun dingin.",
+      "voiceover": "Jam dua siang, inbox nggak pernah sepi, revisi datang bertubi-tubi. Kadang yang kita butuh bukan pelarian jauh ke Da Nang atau Hanoi, cuma jeda lima menit di pinggir trotoar. Sesederhana kopi pekat ketemu gurihnya kelapa asli—ngingetin kalau hidup yang berat tetap layak dinikmati pelan-pelan.",
+      "audio_cue": "Dentang sendok stainless membentur cup, gemericik es batu, diiringi petikan gitar akustik lo-fi bernada hangat dan tenang."
+    },
+    "created_at": "2026-11-08T07:31:34.827359"
   }
 ]
