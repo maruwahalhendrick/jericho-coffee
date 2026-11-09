@@ -576,5 +576,54 @@
       "audio_cue": "Dentang sendok stainless membentur cup, gemericik es batu, diiringi petikan gitar akustik lo-fi bernada hangat dan tenang."
     },
     "created_at": "2026-11-08T07:31:34.827359"
+  },
+  {
+    "id": "JRC-013",
+    "name": "Nanyang Kopi-C Peng",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 200,
+    "extraction_method": "Hot Bloom Flash Chill: 6g Kapal Api Special diseduh 60ml air panas 93C selama 2 menit 30 detik untuk ekstraksi body smoky-bold khas Nanyang roast, lalu disaring kain pour-over cepat ke dalam wadah logam dingin sehingga tersisa 50ml konsentrat kopi bersih tanpa ampas.",
+    "pouring_sequence": "Method A Layered Visual: Masukkan 20ml gula aren cair di dasar cup 12oz, tuang 100ml Susu Milku perlahan, masukkan 150g es batu kristal sampai padat, tuang 50ml konsentrat kopi hitam di atas es, akhiri dengan floating 30ml Susu Evaporasi Tiga Sapi di permukaan untuk efek marmer dramatis.",
+    "ingredients": [
+      {
+        "item": "Kapal Api Special (Ekstrak Saring Kain)",
+        "amount": "6g",
+        "cost": 1000
+      },
+      {
+        "item": "Susu Milku Full Cream",
+        "amount": "100ml",
+        "cost": 1750
+      },
+      {
+        "item": "Susu Evaporasi Tiga Sapi",
+        "amount": "30ml",
+        "cost": 1100
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "20ml",
+        "cost": 600
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 4850,
+    "suggested_price": 10000,
+    "gross_margin_pct": 51.5,
+    "taste_notes": "Bold robusta karamel panggang, gurih creamy pekat dari susu evaporasi, manis legit tipis di ujung lidah dengan aftertaste smokey khas kopitiam peranakan.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Detik 00:00-00:02: Close-up makro susu evaporasi kental warna gading tumpah perlahan di atas lapisan kopi hitam gelap dan es batu, membentuk pola awan gurih yang lumer.",
+      "voiceover": "Jam lima sore, layar laptop akhirnya ketutup juga. Dunia seharian nuntut kita serba cepet, tapi lidah selalu tahu kapan harus melambat. Nanyang Kopi-C Peng; bukan kopi mahal mall, cuma robusta jalanan disaring sabar ketemu gurihnya susu evaporasi. Buat kamu yang udah berjuang hari ini: napas bentar, lu udah keren.",
+      "audio_cue": "Detik 00:00 suara 'clack' sendok mengetuk kaleng evaporasi diikuti gemericik es batu, diiringi instrumen lo-fi akustik santai bernada hangat."
+    },
+    "created_at": "2026-11-09T07:30:57.620563"
   }
 ]
