@@ -625,5 +625,59 @@ window.MENU_VAULT = [
       "audio_cue": "Detik 00:00 suara 'clack' sendok mengetuk kaleng evaporasi diikuti gemericik es batu, diiringi instrumen lo-fi akustik santai bernada hangat."
     },
     "created_at": "2026-11-09T07:30:57.620563"
+  },
+  {
+    "id": "JRC-014",
+    "name": "Street Cham Jasmine Latte",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 210,
+    "extraction_method": "Frother Crema Hack: 2g Nescafe Classic dilarutkan dalam 30ml air panas suhu 90°C bersama 5ml susu evaporasi, lalu di-froth menggunakan hand-frother selama 15 detik hingga membentuk busa microfoam keemasan pekat menyerupai crema moka pot slow-bar.",
+    "pouring_sequence": "Method C Crema Drop: Tuang 15ml gula aren cair di dasar cup, masukkan campuran 100ml Susu Milku, 15ml Susu Evaporasi Tiga Sapi, dan 50ml Teh Melati pekat dingin lalu aduk rata. Isi penuh cup dengan 150g es batu kristal, lalu jatuhkan perlahan busa crema kopi pekat di lapisan paling atas membentuk floating crema cap.",
+    "ingredients": [
+      {
+        "item": "Nescafe Classic (2g)",
+        "amount": "30 ml (ekstraksi)",
+        "cost": 1200
+      },
+      {
+        "item": "Teh Melati Pekat",
+        "amount": "50 ml",
+        "cost": 500
+      },
+      {
+        "item": "Susu Milku",
+        "amount": "100 ml",
+        "cost": 1750
+      },
+      {
+        "item": "Susu Evaporasi Tiga Sapi",
+        "amount": "20 ml",
+        "cost": 750
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "15 ml",
+        "cost": 400
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150 g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5000,
+    "suggested_price": 10000,
+    "gross_margin_pct": 50.0,
+    "taste_notes": "Aroma wangi melati klasik berpadu dengan ketukan pahit tegas robusta, diimbangi body susu gurih berlemak dan manis lembut karamel aren.",
+    "creative_concept": {
+      "theme": "The Honest Alchemist",
+      "visual_hook": "Detik 00:00-00:03: Extreme macro shot es batu kristal berderak jatuh ke cup, disusul kucuran crema kopi pekat keemasan yang jatuh mengambang di atas base teh susu melati dingin di atas bodi Vespa pinggir jalan.",
+      "voiceover": "Jam lima sore, jalanan macet, dan kepala rasanya penuh banget sama urusan kantor yang nggak kelar-kelar. Kadang kita nggak butuh tempat nongkrong mahal buat nenangin diri. Cuma butuh jeda lima menit di pinggir aspal, secangkir racikan teh melati ketemu kopi kental yang jujur, dingin, dan nggak bikin dompet tanggal tua overthinking. Nafas dulu... hari ini udah jalan sejauh ini kok.",
+      "audio_cue": "00:00-00:03 raw ASMR denting es batu kristal dan tuangan crema kental tanpa backsound, lalu perlahan masuk track lofi Rhodes piano hangat bertempo 75 BPM dengan ambience samar deru jalan raya sore hari."
+    },
+    "created_at": "2026-11-10T07:31:57.638435"
   }
 ];
