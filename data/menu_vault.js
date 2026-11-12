@@ -679,5 +679,59 @@ window.MENU_VAULT = [
       "audio_cue": "00:00-00:03 raw ASMR denting es batu kristal dan tuangan crema kental tanpa backsound, lalu perlahan masuk track lofi Rhodes piano hangat bertempo 75 BPM dengan ambience samar deru jalan raya sore hari."
     },
     "created_at": "2026-11-10T07:31:57.638435"
+  },
+  {
+    "id": "JRC-015",
+    "name": "Kopi Halia Peng (Street Ginger Latte)",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 190,
+    "extraction_method": "Hot Bloom Flash Chill: 2g Nescafe Classic dan 5g sari jahe wangi diekstraksi bersama 40ml air mendidih (95°C) selama 30 detik untuk melarutkan oleoresin jahe dan body kopi, lalu langsung distop ekstraksinya di atas es batu dasar.",
+    "pouring_sequence": "Method B Shaken Silky: Masukkan konsentrat kopi jahe panas, gula aren, creamer, dan Susu Milku ke dalam shaker bersama 50g es batu. Shake kuat selama 8 detik hingga tercampur velvety. Tuang seluruh liquid berbusa halus ke dalam cup 12oz yang telah diisi 100g sisa es batu kristal.",
+    "ingredients": [
+      {
+        "item": "Nescafe Classic",
+        "amount": "2g",
+        "cost": 1200
+      },
+      {
+        "item": "Ekstrak Jahe Wangi",
+        "amount": "5g",
+        "cost": 800
+      },
+      {
+        "item": "Susu Milku",
+        "amount": "100ml",
+        "cost": 1750
+      },
+      {
+        "item": "Creamer",
+        "amount": "20ml",
+        "cost": 700
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "20ml",
+        "cost": 600
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5450,
+    "suggested_price": 12000,
+    "gross_margin_pct": 54.58,
+    "taste_notes": "Bold robusta khas kopitiam dengan sensasi hangat jahe yang lingering di tenggorokan, diimbangi gurih creamy susu dan manis legit gula aren.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Detik 00:00-00:03: Shaker dibuka, menuangkan kopi susu kental berbusa lembut ke atas es batu dengan efek suara es berderak tajam. Text on screen: 'Badan remuk kena AC kantor? Minum ini.'",
+      "voiceover": "Jam tujuh malam, revisi baru turun, dan AC kantor rasanya makin menusuk tulang. Di titik ini lo nggak cuma butuh kafein buat melek, tapi butuh sesuatu yang bikin dada lo hangat. Ini Kopi Halia Peng—perpaduan kopi susu jalanan yang creamy dingin, tapi ada sengatan jahe asli yang nepuk pundak lo pelan sambil bilang: hari ini lo udah bertahan dengan baik.",
+      "audio_cue": "Track lo-fi chillhop bertempo lambat dengan layer suara hujan rintik-rintik, berpadu suara ASMR es bergemerincing dan buih kopi yang pecah di permukaan cup."
+    },
+    "created_at": "2026-11-12T07:31:22.967998"
   }
 ];
