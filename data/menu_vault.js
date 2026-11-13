@@ -733,5 +733,64 @@ window.MENU_VAULT = [
       "audio_cue": "Track lo-fi chillhop bertempo lambat dengan layer suara hujan rintik-rintik, berpadu suara ASMR es bergemerincing dan buih kopi yang pecah di permukaan cup."
     },
     "created_at": "2026-11-12T07:31:22.967998"
+  },
+  {
+    "id": "JRC-016",
+    "name": "Street Tiramisu Crema Latte",
+    "category": "Dessert Coffee",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 195,
+    "extraction_method": "Frother Crema Hack: 2.5g Nescafe Classic dilarutkan dalam 35ml air panas 90°C, 15ml creamer cair, dan 0.5g Cocoa Van Houten, lalu di-froth dengan hand-frother 20 detik hingga menghasilkan tiramisu coffee crema yang tebal, pekat, dan glossy tanpa mesin espresso.",
+    "pouring_sequence": "Method C (Crema Drop): Tuang 20ml gula aren dan 20ml Susu Evaporasi Tiga Sapi ke dasar cup 12oz, tuang 100ml Susu Milku dingin, aduk perlahan. Masukkan 150g es batu kristal hingga 3/4 cup. Jatuhkan Tiramisu Coffee Crema perlahan di atas es hingga floating sempurna, akhiri dengan dusting 1g bubuk Cocoa Van Houten di permukaan foam.",
+    "ingredients": [
+      {
+        "item": "Nescafe Classic (2.5g)",
+        "amount": "2.5 g",
+        "cost": 1250
+      },
+      {
+        "item": "Susu Milku UHT",
+        "amount": "100 ml",
+        "cost": 1750
+      },
+      {
+        "item": "Susu Evaporasi Tiga Sapi",
+        "amount": "20 ml",
+        "cost": 750
+      },
+      {
+        "item": "Creamer Nabati",
+        "amount": "15 ml",
+        "cost": 550
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "20 ml",
+        "cost": 550
+      },
+      {
+        "item": "Cocoa Van Houten",
+        "amount": "1.5 g",
+        "cost": 500
+      },
+      {
+        "item": "Es Batu Kristal",
+        "amount": "150 g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5750,
+    "suggested_price": 12000,
+    "gross_margin_pct": 52.1,
+    "taste_notes": "Sensasi dessert tiramisu mewah jalanan: base susu gurih-lembut berkat evaporasi (mirip custard mascarpone), berpadu kontras dengan crema kopi robusta pahit pekat dan wangi dark chocolate Belanda.",
+    "creative_concept": {
+      "theme": "The Honest Alchemist",
+      "visual_hook": "Detik 00:00-00:03: Extreme macro busa kopi cokelat kental jatuh menimpa es batu dan susu putih, diakhiri ayakan cocoa powder yang melayang lambat.",
+      "voiceover": "Gue capek pura-pura sanggup beli dessert cafe lima puluh ribu tiap kali stres lembur. Malam ini gue cuma butuh rasa tiramisu mewah di cup kopi pinggir jalan... buat ngingetin kalau lelah gue hari ini tetap layak diapresiasi.",
+      "audio_cue": "Detik 00:00 desing halus hand-frother berpadu denting es batu kristal, masuk melodi lofi piano hangat tanpa drum beat."
+    },
+    "created_at": "2026-11-13T07:31:24.445620"
   }
 ];
