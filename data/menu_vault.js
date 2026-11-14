@@ -792,5 +792,54 @@ window.MENU_VAULT = [
       "audio_cue": "Detik 00:00 desing halus hand-frother berpadu denting es batu kristal, masuk melodi lofi piano hangat tanpa drum beat."
     },
     "created_at": "2026-11-13T07:31:24.445620"
+  },
+  {
+    "id": "JRC-017",
+    "name": "Kopi Santan Gula Melaka (RTD 150ml)",
+    "category": "Bottle RTD",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "Botol RTD 150ml",
+    "ice_weight_g": 0,
+    "liquid_volume_ml": 150,
+    "extraction_method": "Pre-Batch Biang Konsentrat PP5 1L: Seduh 50 sachet Kapal Api Super Instan dengan 900ml air panas 95°C hingga larut sempurna (yield 1.000ml biang pekat bebas ampas, simpan di chiller dalam botol PP5 foodgrade). Biang langsung larut dingin saat dicampur tanpa butuh penyeduhan ulang.",
+    "pouring_sequence": "Method D Bottle RTD Chilled Shake tanpa es: Tuang 15ml Gula Aren Cair, 25ml Santan Kara dingin, 70ml Susu UHT Milku dingin, dan 40ml Biang Kopi Kapal Api Super Instan ke dalam shaker/mixing pitcher berisi chiller-cold mix. Kocok cepat 8 detik hingga emulsi santan-susu-kopi menyatu creamy, lalu tuang penuh ke Botol PET 150ml steril dan tutup segel rapat. Simpan di kulkas display 2-4°C.",
+    "ingredients": [
+      {
+        "item": "Biang Kopi Kapal Api Super Instan (Pre-Batch)",
+        "amount": "40ml",
+        "cost": 2000
+      },
+      {
+        "item": "Susu UHT Milku",
+        "amount": "70ml",
+        "cost": 1225
+      },
+      {
+        "item": "Santan Kara",
+        "amount": "25ml",
+        "cost": 1200
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "15ml",
+        "cost": 420
+      },
+      {
+        "item": "Botol PET 150ml Foodgrade + Tutup Segel",
+        "amount": "1 pcs",
+        "cost": 700
+      }
+    ],
+    "total_hpp": 5545,
+    "suggested_price": 8000,
+    "gross_margin_pct": 30.7,
+    "taste_notes": "Pekat, gurih, dan tidak encer karena tanpa es. Pembuka rasa robusta bold yang hangat di tenggorokan, diikuti tekstur velvety santan kelapa yang gurih-creamy, ditutup manis karamel gula aren yang lembut dan bersih tanpa ampas.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Close-up tangan lelah baru turun KRL/ojol memutar tutup segel botol kecil 150ml yang berembun dingin, suara 'klik' segel pecah disusul tuangan kopi santan kental ke gelas kaca mungil di meja kos.",
+      "voiceover": "Tanggal tua gini, kadang yang dicari bukan liburan jauh... cuma jeda 5 menit sebelum lanjut overthinking besok kerja apa lagi. Gak perlu gelas gede yang isinya es doang, cukup satu botol kecil yang beneran pekat, gurih santannya kerasa, manisnya gak lebay. Murah, tapi rasanya kayak lagi menghargai diri sendiri setelah seharian bertahan.",
+      "audio_cue": "Lo-fi acoustic guitar pelan (tempo lambat), diselingi ASMR 'klik' segel botol RTD terbuka dan suara kocokan cairan kental dingin."
+    },
+    "created_at": "2026-11-14T07:31:15.316239"
   }
 ];
