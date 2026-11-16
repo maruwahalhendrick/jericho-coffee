@@ -841,5 +841,54 @@
       "audio_cue": "Lo-fi acoustic guitar pelan (tempo lambat), diselingi ASMR 'klik' segel botol RTD terbuka dan suara kocokan cairan kental dingin."
     },
     "created_at": "2026-11-14T07:31:15.316239"
+  },
+  {
+    "id": "JRC-018",
+    "name": "Sea Salt Aren Pre-Batch RTD 250ml",
+    "category": "Bottle RTD",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "Botol RTD 250ml",
+    "ice_weight_g": 0,
+    "liquid_volume_ml": 250,
+    "extraction_method": "Pre-Batch Biang Konsentrat Kapal Api Super Instan di botol PP5 foodgrade 1L (50 sachet + 900ml air panas, bebas ampas & larut dingin)",
+    "pouring_sequence": "Method D (Bottle RTD Chilled Shake tanpa es: Tuang Gula Aren + Sea Salt -> Biang Kapal Api Super Instan 40ml -> Susu UHT Milku 150ml + Creamer -> Air dingin 40ml -> Kocok & segel dingin)",
+    "ingredients": [
+      {
+        "item": "Biang Kapal Api Super Instan Pre-Batch",
+        "amount": "40 ml",
+        "cost": 2000
+      },
+      {
+        "item": "Susu UHT Milku",
+        "amount": "150 ml",
+        "cost": 2625
+      },
+      {
+        "item": "Creamer Kental Manis",
+        "amount": "20 ml",
+        "cost": 700
+      },
+      {
+        "item": "Gula Aren Cair Murni",
+        "amount": "20 ml",
+        "cost": 550
+      },
+      {
+        "item": "Sea Salt (Garam Laut Dapur)",
+        "amount": "sejimpit (1g)",
+        "cost": 50
+      }
+    ],
+    "total_hpp": 5925,
+    "suggested_price": 12000,
+    "gross_margin_pct": 50.6,
+    "taste_notes": "Rasa robusta bersih tanpa ampas dari biang Kapal Api Super Instan menyatu dengan gurihnya susu Milku, diakhiri sentuhan asin lembut yang memotong rasa manis berlebih.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Botol dingin 250ml berkeringat dibuka tutupnya dengan bunyi 'klik', disorot lampu jalanan sore",
+      "voiceover": "Hidup kadang kelewat manis di janji, tapi pait di kenyataan. Sama kayak kopi botolan dua belas ribu ini—tanpa es yang bikin encer di jalan, sedikit garam laut justru bikin rasa manis arennya jadi jujur.",
+      "audio_cue": "Bunyi klik segel botol RTD + denting gitar akustik lofi"
+    },
+    "created_at": "2026-11-16T17:12:41.458568"
   }
 ]
