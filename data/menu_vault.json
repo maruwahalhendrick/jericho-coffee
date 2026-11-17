@@ -890,5 +890,59 @@
       "audio_cue": "Bunyi klik segel botol RTD + denting gitar akustik lofi"
     },
     "created_at": "2026-11-16T17:12:41.458568"
+  },
+  {
+    "id": "JRC-020",
+    "name": "Cà Phê Dừa Milo RTD",
+    "category": "Bottle RTD",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "Botol RTD 150ml",
+    "ice_weight_g": 0,
+    "liquid_volume_ml": 150,
+    "extraction_method": "Pre-Batch Biang Konsentrat PP5 1L: 50 sachet Kapal Api Super Instan + 900ml air panas, yield 1.000ml biang bebas ampas, dinginkan. Dosis 40ml per botol RTD.",
+    "pouring_sequence": "Method D Bottle RTD Chilled Shake: botol 150ml pre-chill, tuang biang 40ml, susu 70ml, santan 15ml, Milo 10g, gula aren 15ml, tutup rapat, shake 12 detik hingga homogen, sajikan dingin.",
+    "ingredients": [
+      {
+        "item": "Kapal Api Super Instan pre-batch 40ml biang",
+        "amount": "40 ml",
+        "cost": 2000
+      },
+      {
+        "item": "Susu UHT Milku",
+        "amount": "70 ml",
+        "cost": 1225
+      },
+      {
+        "item": "Santan Kara",
+        "amount": "15 ml",
+        "cost": 720
+      },
+      {
+        "item": "Milo",
+        "amount": "10 g",
+        "cost": 1000
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "15 ml",
+        "cost": 420
+      },
+      {
+        "item": "Botol RTD 150ml",
+        "amount": "1 botol",
+        "cost": 500
+      }
+    ],
+    "total_hpp": 5865,
+    "suggested_price": 8000,
+    "gross_margin_pct": 26.7,
+    "taste_notes": "Bold robusta, creamy coconut, malt Milo, caramel aren, smooth finish.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Detik 00:00-00:03: botol berkabut, Milo dituang perlahan ke biang kopi kelapa, tangan mengguncang botol, embun menetes.",
+      "voiceover": "Hari ini nggak harus selesai semua. Cukup satu botol dingin, duduk sebentar, tarik napas. Kopi kelapa Milo ini kayak jeda kecil yang nggak minta banyak.",
+      "audio_cue": "Lo-fi hip hop pelan, ASMR guncangan botol, klik tutup, suara cairan berputar."
+    },
+    "created_at": "2026-11-17T07:27:27.691020"
   }
 ]
