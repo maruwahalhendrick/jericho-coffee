@@ -944,5 +944,54 @@ window.MENU_VAULT = [
       "audio_cue": "Lo-fi hip hop pelan, ASMR guncangan botol, klik tutup, suara cairan berputar."
     },
     "created_at": "2026-11-17T07:27:27.691020"
+  },
+  {
+    "id": "JRC-021",
+    "name": "Kopi Susu Melati Gula Aren",
+    "category": "Signature",
+    "status": "STAGE 1: SIMULATED",
+    "cup_size": "12oz",
+    "ice_weight_g": 150,
+    "liquid_volume_ml": 215,
+    "extraction_method": "Pre-Batch Biang Konsentrat PP5 1L: 50 sachet Kapal Api Super Instan dicampur 900ml air panas, yield 1.000ml biang bebas ampas yang larut dingin. Dosis 40ml per sajian (Rp 2.000), disimpan botol PP5 foodgrade untuk operasi street bar cepat dan konsisten.",
+    "pouring_sequence": "Method A Layered Visual: Masukkan es batu 150g ke cup 12oz, tuang gula aren cair 25ml di dasar, lanjut susu UHT 100ml, kemudian teh melati pekat 50ml, terakhir tuang biang kopi Kapal Api 40ml di atas perlahan sehingga terbentuk lapisan hitam-putih-kokoh sebelum disedot atau diaduk.",
+    "ingredients": [
+      {
+        "item": "Kapal Api Super Instan pre-batch biang 40ml",
+        "amount": "40 ml",
+        "cost": 2000
+      },
+      {
+        "item": "Susu UHT Milku",
+        "amount": "100 ml",
+        "cost": 1750
+      },
+      {
+        "item": "Teh Melati pekat",
+        "amount": "50 ml",
+        "cost": 500
+      },
+      {
+        "item": "Gula Aren Cair",
+        "amount": "25 ml",
+        "cost": 700
+      },
+      {
+        "item": "Es batu kristal",
+        "amount": "150 g",
+        "cost": 400
+      }
+    ],
+    "total_hpp": 5350,
+    "suggested_price": 11000,
+    "gross_margin_pct": 51.4,
+    "taste_notes": "Kopi robusta bold dari biang Kapal Api, lembut susu UHT, aroma floral teh melati, manis karamel gula aren, akhir segar dari es batu. Rasanya seperti ngopi di warung kopitiam dengan twist floral modern.",
+    "creative_concept": {
+      "theme": "The Grounded Sanctuary",
+      "visual_hook": "Detik 00:00-00:03: es batu memecah ke dalam cup kaca, susu putih melimpah membentuk awan, biang kopi hitam dituang di atas seperti hujan malam, tiga lapisan terpisah sebelum diaduk.",
+      "voiceover": "Lembur sampe malam, otak lagi error, gaji belum cukup buat kopi mahal. Ini Jericho Kopi Susu Melati Gula Aren—kopi kampung yang dicampur teh melati dan gula aren, rasanya seperti ngopi di warung tapi estetik. Satu tegukan, otak nyala lagi, dompet masih aman. Jeda sejenak, kamu udah cukup hebat.",
+      "audio_cue": "Lo-fi beat ringan, ASMR es batu pecah, suara susu dituang, sendok mengaduk, lalu musik naik saat minum."
+    },
+    "created_at": "2026-11-17T07:28:20.516464"
   }
 ];
