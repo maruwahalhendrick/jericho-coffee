@@ -175,25 +175,49 @@
         </div>
 
         <div class="ruler-mm flex justify-center items-center min-h-[200px]">
-            <div id="labelContainer" class="label-preview relative overflow-hidden flex items-center justify-center p-2 sm:p-3 transition-all duration-300 fade-in">
+            <div id="labelContainer" class="label-preview relative overflow-hidden p-2 sm:p-3 transition-all duration-300 fade-in">
                 <!-- Cut line -->
                 <div id="cutLine" class="cut-line"></div>
-                <!-- Logo -->
-                <img id="imgLogo" src="assets/logo.jpg" class="hidden w-6 h-6 object-contain mb-1">
-                <!-- Brand -->
-                <div id="txtBrand" class="brand-serif text-[10px] font-bold text-ink text-center leading-tight">JERICHO<br>COFFEE</div>
-                <!-- Tagline -->
-                <div id="txtTagline" class="brand-mono text-[7px] text-terracotta uppercase tracking-wider text-center mb-1">Tuhan di dalam Secangkir</div>
-                <!-- Separator -->
-                <div id="sep1" class="w-full h-[1px] bg-ink mx-auto mb-1"></div>
-                <!-- Menu Name -->
-                <div id="txtNama" class="brand-serif text-[9px] font-bold text-ink text-center leading-tight">Aren Latte</div>
-                <!-- Variant -->
-                <div id="txtVarian" class="brand-mono text-[7px] text-clay uppercase tracking-wider text-center mb-1">Gula Aren</div>
-                <!-- Price -->
-                <div id="txtHarga" class="brand-mono text-[9px] font-bold text-forest text-center">Rp 8.000</div>
-                <!-- Volume -->
-                <div id="txtVolume" class="brand-mono text-[7px] text-ink/60 mt-0.5 text-center">150ml</div>
+
+                <!-- Vertical Layout -->
+                <div id="layoutVertical" class="label-vertical h-full flex flex-col items-center justify-between hidden">
+                    <!-- Logo -->
+                    <div id="logoWrapV" class="w-full flex justify-center items-center mb-1">
+                        <img id="imgLogoV" src="assets/logo.jpg" class="hidden w-7 h-7 object-contain">
+                    </div>
+                    <!-- Brand -->
+                    <div id="txtBrandV" class="brand-serif text-[9px] font-bold text-ink text-center leading-tight">JERICHO<br>COFFEE</div>
+                    <!-- Separator -->
+                    <div id="sepV" class="w-[80%] h-[1px] bg-ink my-1"></div>
+                    <!-- Menu Name -->
+                    <div id="txtNamaV" class="brand-serif text-[10px] font-bold text-ink text-center leading-tight">Aren Latte</div>
+                    <!-- Variant -->
+                    <div id="txtVarianV" class="brand-mono text-[6px] text-clay uppercase tracking-wider text-center mb-0.5">Gula Aren</div>
+                    <!-- Price -->
+                    <div id="txtHargaV" class="brand-mono text-[9px] font-bold text-forest text-center">Rp 8.000</div>
+                    <!-- Volume -->
+                    <div id="txtVolumeV" class="brand-mono text-[6px] text-ink/60 text-center">150ml</div>
+                </div>
+
+                <!-- Horizontal Layout -->
+                <div id="layoutHorizontal" class="label-horizontal h-full flex flex-row items-center justify-between hidden">
+                    <!-- Left: Logo + Brand -->
+                    <div id="leftBlockH" class="flex flex-col items-center justify-center h-full w-1/3 px-0.5">
+                        <div id="logoWrapH" class="flex justify-center items-center mb-0.5">
+                            <img id="imgLogoH" src="assets/logo.jpg" class="hidden w-5 h-5 object-contain">
+                        </div>
+                        <div id="txtBrandH" class="brand-serif text-[7px] font-bold text-ink text-center leading-tight">JERICHO<br>COFFEE</div>
+                    </div>
+                    <!-- Right: Menu Info -->
+                    <div id="rightBlockH" class="flex flex-col justify-center h-full w-2/3 px-1">
+                        <div id="txtNamaH" class="brand-serif text-[8px] font-bold text-ink leading-tight">Aren Latte</div>
+                        <div class="flex justify-between mt-0.5">
+                            <div id="txtVarianH" class="brand-mono text-[6px] text-clay uppercase tracking-wider">Gula Aren</div>
+                            <div id="txtHargaH" class="brand-mono text-[8px] font-bold text-forest">Rp 8.000</div>
+                        </div>
+                        <div id="txtVolumeH" class="brand-mono text-[6px] text-ink/60 mt-0.5">150ml</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -216,16 +240,22 @@
         let orientation = 'vertical';
 
         const els = {
-            logo: document.getElementById('imgLogo'),
-            brand: document.getElementById('txtBrand'),
-            tagline: document.getElementById('txtTagline'),
-            sep1: document.getElementById('sep1'),
-            nama: document.getElementById('txtNama'),
-            varian: document.getElementById('txtVarian'),
-            harga: document.getElementById('txtHarga'),
-            volume: document.getElementById('txtVolume'),
+            logoV: document.getElementById('imgLogoV'),
+            logoH: document.getElementById('imgLogoH'),
+            brandV: document.getElementById('txtBrandV'),
+            brandH: document.getElementById('txtBrandH'),
+            namaV: document.getElementById('txtNamaV'),
+            namaH: document.getElementById('txtNamaH'),
+            varianV: document.getElementById('txtVarianV'),
+            varianH: document.getElementById('txtVarianH'),
+            hargaV: document.getElementById('txtHargaV'),
+            hargaH: document.getElementById('txtHargaH'),
+            volumeV: document.getElementById('txtVolumeV'),
+            volumeH: document.getElementById('txtVolumeH'),
             container: document.getElementById('labelContainer'),
             cutLine: document.getElementById('cutLine'),
+            layoutV: document.getElementById('layoutVertical'),
+            layoutH: document.getElementById('layoutHorizontal'),
             btnVert: document.getElementById('btnVert'),
             btnHori: document.getElementById('btnHori'),
             chkLogo: document.getElementById('chkLogo'),
@@ -253,54 +283,45 @@
             els.btnHori.classList.toggle('text-ink', o !== 'horizontal');
 
             // Container classes
-            els.container.className = 'label-preview relative overflow-hidden flex items-center justify-center p-2 sm:p-3 transition-all duration-300 fade-in';
+            els.container.className = 'label-preview relative overflow-hidden p-2 sm:p-3 transition-all duration-300 fade-in';
             if (o === 'vertical') {
                 els.container.classList.add('label-vertical');
             } else {
                 els.container.classList.add('label-horizontal');
             }
 
-            // Cut line
-            els.chkCutLine.checked ? els.cutLine.classList.add('visible') : els.cutLine.classList.remove('visible');
+            // Show/hide layouts
+            els.layoutV.classList.toggle('hidden', o !== 'vertical');
+            els.layoutH.classList.toggle('hidden', o !== 'horizontal');
+
+            // Cut line visibility
+            els.cutLine.classList.toggle('visible', els.chkCutLine.checked);
 
             render();
         }
 
         function render() {
             // Text sync
-            els.nama.textContent = els.inpNama.value || 'Nama Menu';
-            els.harga.textContent = els.inpHarga.value || 'Rp 0';
-            els.volume.textContent = els.inpVolume.value || '150ml';
-            els.varian.textContent = els.inpVarian.value || 'Signature';
+            const nama = els.inpNama.value || 'Nama Menu';
+            const harga = els.inpHarga.value || 'Rp 0';
+            const volume = els.inpVolume.value || '150ml';
+            const varian = els.inpVarian.value || 'Signature';
+
+            els.namaV.textContent = nama;
+            els.namaH.textContent = nama;
+            els.varianV.textContent = varian;
+            els.varianH.textContent = varian;
+            els.hargaV.textContent = harga;
+            els.hargaH.textContent = harga;
+            els.volumeV.textContent = volume;
+            els.volumeH.textContent = volume;
 
             // Logo visibility
-            els.logo.classList.toggle('hidden', !els.chkLogo.checked);
+            els.logoV.classList.toggle('hidden', !els.chkLogo.checked);
+            els.logoH.classList.toggle('hidden', !els.chkLogo.checked);
 
             // Cut line visibility
             els.cutLine.classList.toggle('visible', els.chkCutLine.checked);
-
-            // Font sizing responsive to orientation
-            if (orientation === 'horizontal') {
-                els.brand.className = 'brand-serif text-[8px] font-bold text-ink text-center leading-tight';
-                els.tagline.className = 'brand-mono text-[6px] text-terracotta uppercase tracking-wider text-center mb-1';
-                els.sep1.className = 'w-full h-[1px] bg-ink mx-auto mb-1';
-                els.nama.className = 'brand-serif text-[8px] font-bold text-ink text-center leading-tight';
-                els.varian.className = 'brand-mono text-[6px] text-clay uppercase tracking-wider text-center mb-1';
-                els.harga.className = 'brand-mono text-[8px] font-bold text-forest text-center';
-                els.volume.className = 'brand-mono text-[6px] text-ink/60 mt-0.5 text-center';
-                els.container.classList.remove('flex-col');
-                els.container.classList.add('flex-row');
-            } else {
-                els.brand.className = 'brand-serif text-[10px] font-bold text-ink text-center leading-tight';
-                els.tagline.className = 'brand-mono text-[7px] text-terracotta uppercase tracking-wider text-center mb-1';
-                els.sep1.className = 'w-full h-[1px] bg-ink mx-auto mb-1';
-                els.nama.className = 'brand-serif text-[9px] font-bold text-ink text-center leading-tight';
-                els.varian.className = 'brand-mono text-[7px] text-clay uppercase tracking-wider text-center mb-1';
-                els.harga.className = 'brand-mono text-[9px] font-bold text-forest text-center';
-                els.volume.className = 'brand-mono text-[7px] text-ink/60 mt-0.5 text-center';
-                els.container.classList.remove('flex-row');
-                els.container.classList.add('flex-col');
-            }
         }
 
         // Input listeners
@@ -344,9 +365,8 @@
 
         // ---------- EXPORT FUNCTIONS ----------
 
-        // 1 cm = 37.7952755906 px at 96dpi; 1mm = 3.779527559px
-        const MM_TO_PX = 3.779527559;
-        const EXPORT_SCALE = 3.125; // 300dpi / 96dpi ≈ 3.125
+        const MM_TO_PX = 3.779527559; // 1mm @96dpi
+        const EXPORT_SCALE = 3.125; // 300dpi / 96dpi
 
         async function exportSVG() {
             const wCm = orientation === 'vertical' ? 2 : 4;
@@ -359,6 +379,10 @@
             const logoData = await imageToDataURL('assets/logo.jpg');
             const showLogo = els.chkLogo.checked;
             const cutLine = els.chkCutLine.checked;
+            const nama = els.inpNama.value || 'Nama Menu';
+            const harga = els.inpHarga.value || 'Rp 0';
+            const volume = els.inpVolume.value || '150ml';
+            const varian = els.inpVarian.value || 'Signature';
 
             const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="${pxW}px" height="${pxH}px" viewBox="0 0 ${pxW} ${pxH}">
@@ -375,17 +399,30 @@
   ${cutLine ? `<rect x="2" y="2" width="${pxW - 4}" height="${pxH - 4}" fill="none" stroke="${BRAND.terracotta}" stroke-width="1" stroke-dasharray="4,4"/>` : ''}
   <!-- Outer border -->
   <rect width="100%" height="100%" fill="none" stroke="${BRAND.ink}" stroke-width="4"/>
-  ${showLogo ? `
-  <image href="${logoData}" x="50%" y="${orientation === 'vertical' ? 8 : (pxH/2 - 14)}" width="${orientation === 'vertical' ? 24 : 36}" height="${orientation === 'vertical' ? 24 : 36}" transform="translate(${- (orientation === 'vertical' ? 12 : 18)},0)"/>`
-  : ''
+
+  ${orientation === 'vertical'
+    ? `
+  <!-- Vertical Layout -->
+  ${showLogo ? `<image href="${logoData}" x="50%" y="6" width="20" height="20" transform="translate(-10,0)"/>` : ''}
+  <text x="50%" y="34" text-anchor="middle" class="brand-serif" font-size="9" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">JERICHO COFFEE</text>
+  <line x1="8" y1="44" x2="${pxW - 8}" y2="44" stroke="${BRAND.ink}" stroke-width="1"/>
+  <text x="50%" y="62" text-anchor="middle" class="brand-serif" font-size="10" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">${escapeXml(nama)}</text>
+  <text x="50%" y="74" text-anchor="middle" class="brand-mono" font-size="6" fill="${BRAND.clay}" letter-spacing="1" dominant-baseline="middle">${escapeXml(varian)}</text>
+  <text x="50%" y="90" text-anchor="middle" class="brand-mono" font-size="9" font-weight="bold" fill="${BRAND.forest}" dominant-baseline="middle">${escapeXml(harga)}</text>
+  <text x="50%" y="104" text-anchor="middle" class="brand-mono" font-size="6" fill="${BRAND.ink}" opacity="0.7" dominant-baseline="middle">${escapeXml(volume)}</text>
+  `
+    : `
+  <!-- Horizontal Layout -->
+  ${showLogo ? `<image href="${logoData}" x="6" y="${pxH/2 - 10}" width="18" height="18"/>` : ''}
+  <text x="28" y="14" class="brand-serif" font-size="7" font-weight="bold" fill="${BRAND.ink}">JERICHO</text>
+  <text x="28" y="26" class="brand-serif" font-size="7" font-weight="bold" fill="${BRAND.ink}">COFFEE</text>
+  <line x1="28" y1="32" x2="28" y2="${pxH - 6}" stroke="${BRAND.ink}" stroke-width="1"/>
+  <text x="38" y="16" class="brand-serif" font-size="8" font-weight="bold" fill="${BRAND.ink}">${escapeXml(nama)}</text>
+  <text x="38" y="30" class="brand-mono" font-size="6" fill="${BRAND.clay}" letter-spacing="1">${escapeXml(varian)}</text>
+  <text x="38" y="44" class="brand-mono" font-size="8" font-weight="bold" fill="${BRAND.forest}">${escapeXml(harga)}</text>
+  <text x="38" y="56" class="brand-mono" font-size="6" fill="${BRAND.ink}" opacity="0.7">${escapeXml(volume)}</text>
+  `
   }
-  <text x="50%" y="${orientation === 'vertical' ? 30 : (pxH/2 + 6)}" text-anchor="middle" class="brand-serif" font-size="${orientation === 'vertical' ? 10 : 8}" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">JERICHO COFFEE</text>
-  <text x="50%" y="${orientation === 'vertical' ? 44 : (pxH/2 + 16)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.terracotta}" letter-spacing="2" dominant-baseline="middle">Tuhan di dalam Secangkir</text>
-  <line x1="${orientation === 'vertical' ? 8 : 10}" y1="${orientation === 'vertical' ? 54 : (pxH/2 + 24)}" x2="${orientation === 'vertical' ? (pxW-8) : (pxW-10)}" y2="${orientation === 'vertical' ? 54 : (pxH/2 + 24)}" stroke="${BRAND.ink}" stroke-width="1"/>
-  <text x="50%" y="${orientation === 'vertical' ? 72 : (pxH/2 + 38)}" text-anchor="middle" class="brand-serif" font-size="${orientation === 'vertical' ? 11 : 9}" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">${escapeXml(els.inpNama.value)}</text>
-  <text x="50%" y="${orientation === 'vertical' ? 86 : (pxH/2 + 50)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.clay}" letter-spacing="1" dominant-baseline="middle">${escapeXml(els.inpVarian.value)}</text>
-  <text x="50%" y="${orientation === 'vertical' ? 102 : (pxH/2 + 62)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 11 : 9}" font-weight="bold" fill="${BRAND.forest}" dominant-baseline="middle">${escapeXml(els.inpHarga.value)}</text>
-  <text x="50%" y="${orientation === 'vertical' ? 116 : (pxH/2 + 72)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.ink}" opacity="0.7" dominant-baseline="middle">${escapeXml(els.inpVolume.value)}</text>
 </svg>`;
 
             downloadBlob(svg, 'image/svg+xml', `jericho-label-${orientation}.svg`);
@@ -450,7 +487,12 @@
         }
 
         function escapeXml(text) {
-            return String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+            return String(text)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
         }
 
         function downloadBlob(dataUrl, mime, filename) {
