@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jericho Coffee — Label Stiker Botol 150ml</title>
+    <title>Jericho Coffee — Label Stiker Botol RTD</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
 
         :root {
             --linen: #EBE4D2;
@@ -22,12 +22,31 @@
             background-color: var(--linen);
             color: var(--ink);
             font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            min-height: 100vh;
         }
 
         .brand-serif { font-family: 'DM Serif Display', serif; }
         .brand-mono { font-family: 'JetBrains Mono', monospace; }
 
-        /* Label print rulers */
+        /* Ruler background for mm grid */
+        .ruler-mm {
+            position: relative;
+        }
+        .ruler-mm::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(to right, var(--ink) 1px, transparent 1px),
+                linear-gradient(to bottom, var(--ink) 1px, transparent 1px);
+            background-size: 9.6px 9.6px; /* 1mm @96dpi */
+            opacity: 0.25;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Label preview card — physical size 2cm × 4cm at 96dpi */
         .label-preview {
             box-shadow: 4px 4px 0 var(--ink);
             border: 2px solid var(--ink);
@@ -45,37 +64,32 @@
             height: 75.6px;  /* 2cm @96dpi */
         }
 
-        .ruler-mm {
-            position: relative;
-        }
-        .ruler-mm::before {
-            content: '';
+        /* Cut line overlay (die line) */
+        .cut-line {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image:
-                linear-gradient(to right, var(--ink) 1px, transparent 1px),
-                linear-gradient(to bottom, var(--ink) 1px, transparent 1px);
-            background-size: 9.6px 9.6px; /* 1mm @96dpi */
-            opacity: 0.3;
+            inset: -2px;
+            border: 1px dashed var(--terracotta);
+            border-radius: 2px;
             pointer-events: none;
-            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.2s;
         }
-
-        .export-btn:active {
-            transform: scale(0.97);
-        }
+        .cut-line.visible { opacity: 1; }
 
         @media print {
             body { background: white !important; }
             .no-print { display: none !important; }
             .label-preview { box-shadow: none; border: 1px solid var(--ink); }
         }
+
+        .fade-in { animation: fadeIn 0.3s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
-<body class="min-h-screen p-4 sm:p-8 antialiased selection:bg-terracotta selection:text-white">
+<body class="antialiased selection:bg-terracotta selection:text-white">
 
     <!-- Header -->
-    <header class="max-w-4xl mx-auto mb-8 flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4 border-b-4 border-ink pb-6">
+    <header class="max-w-4xl mx-auto mb-8 flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4 border-b-4 border-ink pb-6 no-print">
         <div class="flex items-center gap-3">
             <img src="assets/logo.jpg" alt="Jericho Coffee" class="w-10 h-10 object-contain bg-linen p-0.5 border border-ink">
             <div>
@@ -89,7 +103,7 @@
     </header>
 
     <!-- Controls -->
-    <div class="max-w-4xl mx-auto mb-8 bg-white border-4 border-ink p-6 sm:p-8 hard-shadow no-print">
+    <div class="max-w-4xl mx-auto mb-8 bg-white border-4 border-ink p-6 sm:p-8 shadow-[4px_4px_0_#0A0A0A] no-print">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
             <!-- Orientation -->
             <div class="md:col-span-4">
@@ -104,12 +118,12 @@
             <div class="md:col-span-12">
                 <label class="brand-mono text-[11px] text-clay uppercase font-bold mb-2 block">Preset Menu Jericho</label>
                 <div class="flex flex-wrap gap-2" id="presetMenu">
-                    <button onclick="loadPreset('americano150')" class="preset-btn border-2 border-ink bg-white text-ink brand-mono text-[10px] px-3 py-1.5 font-bold transition-all">Americano · 150ml · Rp 5.000</button>
-                    <button onclick="loadPreset('vanilla150')" class="preset-btn border-2 border-ink bg-white text-ink brand-mono text-[10px] px-3 py-1.5 font-bold transition-all">Vanilla Latte · 150ml · Rp 8.000</button>
-                    <button onclick="loadPreset('aren150')" class="preset-btn border-2 border-ink bg-white text-ink brand-mono text-[10px] px-3 py-1.5 font-bold transition-all">Aren Latte · 150ml · Rp 8.000</button>
-                    <button onclick="loadPreset('americano250')" class="preset-btn border-2 border-terracotta text-terracotta bg-terracotta/5 brand-mono text-[10px] px-3 py-1.5 font-bold transition-all">Americano · 250ml · Rp 12.000</button>
-                    <button onclick="loadPreset('vanilla250')" class="preset-btn border-2 border-terracotta text-terracotta bg-terracotta/5 brand-mono text-[10px] px-3 py-1.5 font-bold transition-all">Vanilla Latte · 250ml · Rp 12.000</button>
-                    <button onclick="loadPreset('aren250')" class="preset-btn border-2 border-terracotta text-terracotta bg-terracotta/5 brand-mono text-[10px] px-3 py-1.5 font-bold transition-all">Aren Latte · 250ml · Rp 12.000</button>
+                    <button onclick="loadPreset('americano150')" class="preset-btn border-2 border-ink bg-white text-ink brand-mono text-[10px] px-3 py-1.5 font-bold transition-all hover:bg-linen">Americano · 150ml · Rp 5.000</button>
+                    <button onclick="loadPreset('vanilla150')" class="preset-btn border-2 border-ink bg-white text-ink brand-mono text-[10px] px-3 py-1.5 font-bold transition-all hover:bg-linen">Vanilla Latte · 150ml · Rp 8.000</button>
+                    <button onclick="loadPreset('aren150')" class="preset-btn border-2 border-ink bg-white text-ink brand-mono text-[10px] px-3 py-1.5 font-bold transition-all hover:bg-linen">Aren Latte · 150ml · Rp 8.000</button>
+                    <button onclick="loadPreset('americano250')" class="preset-btn border-2 border-terracotta text-terracotta bg-terracotta/5 brand-mono text-[10px] px-3 py-1.5 font-bold transition-all hover:bg-terracotta/10">Americano · 250ml · Rp 12.000</button>
+                    <button onclick="loadPreset('vanilla250')" class="preset-btn border-2 border-terracotta text-terracotta bg-terracotta/5 brand-mono text-[10px] px-3 py-1.5 font-bold transition-all hover:bg-terracotta/10">Vanilla Latte · 250ml · Rp 12.000</button>
+                    <button onclick="loadPreset('aren250')" class="preset-btn border-2 border-terracotta text-terracotta bg-terracotta/5 brand-mono text-[10px] px-3 py-1.5 font-bold transition-all hover:bg-terracotta/10">Aren Latte · 250ml · Rp 12.000</button>
                 </div>
             </div>
 
@@ -132,19 +146,23 @@
                 <input type="text" id="inpVarian" value="Signature" class="w-full border-2 border-ink bg-white p-2 brand-mono text-sm focus:ring-2 focus:ring-terracotta focus:outline-none">
             </div>
 
-            <!-- Logo toggle -->
-            <div class="md:col-span-4 flex items-end">
-                <label class="flex items-center gap-2 cursor-pointer">
+            <!-- Logo toggle + cut line -->
+            <div class="md:col-span-4 flex flex-col sm:flex-row items-end justify-between gap-3">
+                <div class="flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" id="chkLogo" checked class="accent-terracotta">
                     <span class="brand-mono text-[11px] text-ink">Tampilkan Logo</span>
-                </label>
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" id="chkCutLine" class="accent-terracotta">
+                    <span class="brand-mono text-[11px] text-ink">Garis Potong</span>
+                </div>
             </div>
 
             <!-- Export buttons -->
             <div class="md:col-span-4 flex flex-col sm:flex-row gap-3 justify-end">
-                <button onclick="exportSVG()" class="export-btn flex-1 sm:flex-auto py-3 border-2 border-forest text-forest brand-mono text-xs font-bold uppercase tracking-wider bg-white hover:bg-forest/5 transition-colors">Export SVG</button>
-                <button onclick="exportPNG()" class="export-btn flex-1 sm:flex-auto py-3 border-2 border-terracotta text-terracotta brand-mono text-xs font-bold uppercase tracking-wider bg-white hover:bg-terracotta/5 transition-colors">Export PNG</button>
-                <button onclick="exportJPG()" class="export-btn flex-1 sm:flex-auto py-3 border-2 border-ink text-ink brand-mono text-xs font-bold uppercase tracking-wider bg-white hover:bg-ink/5 transition-colors">Export JPG</button>
+                <button onclick="exportSVG()" class="export-btn flex-1 sm:flex-auto py-3 border-2 border-forest text-forest brand-mono text-xs font-bold uppercase tracking-wider bg-white hover:bg-forest/5 transition-colors shadow-[2px_2px_0_#086B3E]">Export SVG</button>
+                <button onclick="exportPNG()" class="export-btn flex-1 sm:flex-auto py-3 border-2 border-terracotta text-terracotta brand-mono text-xs font-bold uppercase tracking-wider bg-white hover:bg-terracotta/5 transition-colors shadow-[2px_2px_0_#B45309]">Export PNG</button>
+                <button onclick="exportJPG()" class="export-btn flex-1 sm:flex-auto py-3 border-2 border-ink text-ink brand-mono text-xs font-bold uppercase tracking-wider bg-white hover:bg-ink/5 transition-colors shadow-[2px_2px_0_#0A0A0A]">Export JPG</button>
             </div>
         </div>
     </div>
@@ -153,11 +171,13 @@
     <div class="max-w-4xl mx-auto">
         <div class="flex items-center justify-between mb-4">
             <div class="brand-mono text-xs text-ink/60">Preview (ukuran nyata 2×4 cm)</div>
-            <div class="brand-mono text-[10px] text-clay">Skala layar: 1:1 @96dpi · Untuk print gunakan export di atas</div>
+            <div class="brand-mono text-[10px] text-clay">1:1 @96dpi · Untuk print gunakan export di atas</div>
         </div>
 
         <div class="ruler-mm flex justify-center items-center min-h-[200px]">
-            <div id="labelContainer" class="label-preview label-vertical relative overflow-hidden flex flex-col items-center justify-center p-2 sm:p-3 transition-all duration-300">
+            <div id="labelContainer" class="label-preview relative overflow-hidden flex items-center justify-center p-2 sm:p-3 transition-all duration-300 fade-in">
+                <!-- Cut line -->
+                <div id="cutLine" class="cut-line"></div>
                 <!-- Logo -->
                 <img id="imgLogo" src="assets/logo.jpg" class="hidden w-6 h-6 object-contain mb-1">
                 <!-- Brand -->
@@ -167,18 +187,18 @@
                 <!-- Separator -->
                 <div id="sep1" class="w-full h-[1px] bg-ink mx-auto mb-1"></div>
                 <!-- Menu Name -->
-                <div id="txtNama" class="brand-serif text-[9px] font-bold text-ink text-center leading-tight">Kopi Santan Velvet Aren</div>
+                <div id="txtNama" class="brand-serif text-[9px] font-bold text-ink text-center leading-tight">Aren Latte</div>
                 <!-- Variant -->
-                <div id="txtVarian" class="brand-mono text-[7px] text-clay uppercase tracking-wider text-center mb-1">Signature</div>
+                <div id="txtVarian" class="brand-mono text-[7px] text-clay uppercase tracking-wider text-center mb-1">Gula Aren</div>
                 <!-- Price -->
-                <div id="txtHarga" class="brand-mono text-[9px] font-bold text-forest text-center">Rp 12.000</div>
+                <div id="txtHarga" class="brand-mono text-[9px] font-bold text-forest text-center">Rp 8.000</div>
                 <!-- Volume -->
                 <div id="txtVolume" class="brand-mono text-[7px] text-ink/60 mt-0.5 text-center">150ml</div>
             </div>
         </div>
 
         <div class="mt-4 brand-mono text-[11px] text-ink/50 text-center">
-            Tips: Ukuran label disesuaikan untuk botol 150ml. Export PNG/JPG beresolusi tinggi (300 dpi setara) siap dicetak.
+            Tips: Ukuran label disesuaikan untuk botol 150ml. Export PNG/JPG resolusi tinggi (300 dpi setara) siap dicetak.
         </div>
     </div>
 
@@ -205,9 +225,11 @@
             harga: document.getElementById('txtHarga'),
             volume: document.getElementById('txtVolume'),
             container: document.getElementById('labelContainer'),
+            cutLine: document.getElementById('cutLine'),
             btnVert: document.getElementById('btnVert'),
             btnHori: document.getElementById('btnHori'),
             chkLogo: document.getElementById('chkLogo'),
+            chkCutLine: document.getElementById('chkCutLine'),
             inpNama: document.getElementById('inpNama'),
             inpHarga: document.getElementById('inpHarga'),
             inpVolume: document.getElementById('inpVolume'),
@@ -216,6 +238,8 @@
 
         function setOrientation(o) {
             orientation = o;
+
+            // Button states
             els.btnVert.classList.toggle('active', o === 'vertical');
             els.btnVert.classList.toggle('bg-terracotta', o === 'vertical');
             els.btnVert.classList.toggle('text-white', o === 'vertical');
@@ -228,12 +252,17 @@
             els.btnHori.classList.toggle('bg-white', o !== 'horizontal');
             els.btnHori.classList.toggle('text-ink', o !== 'horizontal');
 
-            els.container.className = 'label-preview relative overflow-hidden flex flex-col items-center justify-center p-2 sm:p-3 transition-all duration-300';
+            // Container classes
+            els.container.className = 'label-preview relative overflow-hidden flex items-center justify-center p-2 sm:p-3 transition-all duration-300 fade-in';
             if (o === 'vertical') {
                 els.container.classList.add('label-vertical');
             } else {
                 els.container.classList.add('label-horizontal');
             }
+
+            // Cut line
+            els.chkCutLine.checked ? els.cutLine.classList.add('visible') : els.cutLine.classList.remove('visible');
+
             render();
         }
 
@@ -245,11 +274,10 @@
             els.varian.textContent = els.inpVarian.value || 'Signature';
 
             // Logo visibility
-            if (els.chkLogo.checked) {
-                els.logo.classList.remove('hidden');
-            } else {
-                els.logo.classList.add('hidden');
-            }
+            els.logo.classList.toggle('hidden', !els.chkLogo.checked);
+
+            // Cut line visibility
+            els.cutLine.classList.toggle('visible', els.chkCutLine.checked);
 
             // Font sizing responsive to orientation
             if (orientation === 'horizontal') {
@@ -260,8 +288,8 @@
                 els.varian.className = 'brand-mono text-[6px] text-clay uppercase tracking-wider text-center mb-1';
                 els.harga.className = 'brand-mono text-[8px] font-bold text-forest text-center';
                 els.volume.className = 'brand-mono text-[6px] text-ink/60 mt-0.5 text-center';
-                els.container.classList.add('flex-row');
                 els.container.classList.remove('flex-col');
+                els.container.classList.add('flex-row');
             } else {
                 els.brand.className = 'brand-serif text-[10px] font-bold text-ink text-center leading-tight';
                 els.tagline.className = 'brand-mono text-[7px] text-terracotta uppercase tracking-wider text-center mb-1';
@@ -280,6 +308,9 @@
             input.addEventListener('input', render);
         });
         els.chkLogo.addEventListener('change', render);
+        els.chkCutLine.addEventListener('change', () => {
+            els.cutLine.classList.toggle('visible', els.chkCutLine.checked);
+        });
 
         // Preset loader
         function loadPreset(key) {
@@ -313,62 +344,64 @@
 
         // ---------- EXPORT FUNCTIONS ----------
 
-        function getScale() {
-            // Export at 300 dpi equivalent: multiply by ~3.125 (300/96)
-            return 3.125;
-        }
+        // 1 cm = 37.7952755906 px at 96dpi; 1mm = 3.779527559px
+        const MM_TO_PX = 3.779527559;
+        const EXPORT_SCALE = 3.125; // 300dpi / 96dpi ≈ 3.125
 
         async function exportSVG() {
-            const scale = getScale();
-            const w = orientation === 'vertical' ? 2 : 4;  // cm
-            const h = orientation === 'vertical' ? 4 : 2;  // cm
-            const mmW = w * 10;
-            const mmH = h * 10;
-            // 1 cm = 37.79527559055118 px at 96dpi? Actually 1in=96px, 1cm=37.795px
-            const pxW = mmW * 3.779527559; // mm to px at 96dpi
-            const pxH = mmH * 3.779527559;
+            const wCm = orientation === 'vertical' ? 2 : 4;
+            const hCm = orientation === 'vertical' ? 4 : 2;
+            const mmW = wCm * 10;
+            const mmH = hCm * 10;
+            const pxW = mmW * MM_TO_PX;
+            const pxH = mmH * MM_TO_PX;
 
-            // Build inline SVG
             const logoData = await imageToDataURL('assets/logo.jpg');
             const showLogo = els.chkLogo.checked;
+            const cutLine = els.chkCutLine.checked;
 
             const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="${pxW}px" height="${pxH}px" viewBox="0 0 ${pxW} ${pxH}">
   <defs>
     <style>
-      @font-face { font-family: 'DM Serif Display'; src: url('https://fonts.googleapis.com/css2?family=DM+Serif+Display') format('css'); }
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
       .brand-serif { font-family: 'DM Serif Display', serif; }
       .brand-mono { font-family: 'JetBrains Mono', monospace; }
     </style>
   </defs>
-  <rect width="100%" height="100%" fill="${BRAND.linen}" stroke="${BRAND.ink}" stroke-width="4"/>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="${BRAND.linen}"/>
+  <!-- Cut line -->
+  ${cutLine ? `<rect x="2" y="2" width="${pxW - 4}" height="${pxH - 4}" fill="none" stroke="${BRAND.terracotta}" stroke-width="1" stroke-dasharray="4,4"/>` : ''}
+  <!-- Outer border -->
+  <rect width="100%" height="100%" fill="none" stroke="${BRAND.ink}" stroke-width="4"/>
   ${showLogo ? `
-  <image href="${logoData}" x="50%" y="${orientation === 'vertical' ? 8 : (pxH/2 - 12)}" width="${orientation === 'vertical' ? 24 : 36}" height="${orientation === 'vertical' ? 24 : 36}" transform="translate(${- (orientation === 'vertical' ? 12 : 18)},0)"/>`
+  <image href="${logoData}" x="50%" y="${orientation === 'vertical' ? 8 : (pxH/2 - 14)}" width="${orientation === 'vertical' ? 24 : 36}" height="${orientation === 'vertical' ? 24 : 36}" transform="translate(${- (orientation === 'vertical' ? 12 : 18)},0)"/>`
   : ''
   }
-  <text x="50%" y="${orientation === 'vertical' ? 30 : (pxH/2 + 6)}" text-anchor="middle" font-family="'DM Serif Display', serif" font-size="${orientation === 'vertical' ? 10 : 8}" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">JERICHO COFFEE</text>
-  <text x="50%" y="${orientation === 'vertical' ? 44 : (pxH/2 + 16)}" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.terracotta}" letter-spacing="2" dominant-baseline="middle">Tuhan di dalam Secangkir</text>
+  <text x="50%" y="${orientation === 'vertical' ? 30 : (pxH/2 + 6)}" text-anchor="middle" class="brand-serif" font-size="${orientation === 'vertical' ? 10 : 8}" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">JERICHO COFFEE</text>
+  <text x="50%" y="${orientation === 'vertical' ? 44 : (pxH/2 + 16)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.terracotta}" letter-spacing="2" dominant-baseline="middle">Tuhan di dalam Secangkir</text>
   <line x1="${orientation === 'vertical' ? 8 : 10}" y1="${orientation === 'vertical' ? 54 : (pxH/2 + 24)}" x2="${orientation === 'vertical' ? (pxW-8) : (pxW-10)}" y2="${orientation === 'vertical' ? 54 : (pxH/2 + 24)}" stroke="${BRAND.ink}" stroke-width="1"/>
-  <text x="50%" y="${orientation === 'vertical' ? 72 : (pxH/2 + 38)}" text-anchor="middle" font-family="'DM Serif Display', serif" font-size="${orientation === 'vertical' ? 11 : 9}" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">${els.inpNama.value}</text>
-  <text x="50%" y="${orientation === 'vertical' ? 86 : (pxH/2 + 50)}" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.clay}" letter-spacing="1" dominant-baseline="middle">${els.inpVarian.value}</text>
-  <text x="50%" y="${orientation === 'vertical' ? 102 : (pxH/2 + 62)}" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="${orientation === 'vertical' ? 11 : 9}" font-weight="bold" fill="${BRAND.forest}" dominant-baseline="middle">${els.inpHarga.value}</text>
-  <text x="50%" y="${orientation === 'vertical' ? 116 : (pxH/2 + 72)}" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.ink}" opacity="0.7" dominant-baseline="middle">${els.inpVolume.value}</text>
+  <text x="50%" y="${orientation === 'vertical' ? 72 : (pxH/2 + 38)}" text-anchor="middle" class="brand-serif" font-size="${orientation === 'vertical' ? 11 : 9}" font-weight="bold" fill="${BRAND.ink}" dominant-baseline="middle">${escapeXml(els.inpNama.value)}</text>
+  <text x="50%" y="${orientation === 'vertical' ? 86 : (pxH/2 + 50)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.clay}" letter-spacing="1" dominant-baseline="middle">${escapeXml(els.inpVarian.value)}</text>
+  <text x="50%" y="${orientation === 'vertical' ? 102 : (pxH/2 + 62)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 11 : 9}" font-weight="bold" fill="${BRAND.forest}" dominant-baseline="middle">${escapeXml(els.inpHarga.value)}</text>
+  <text x="50%" y="${orientation === 'vertical' ? 116 : (pxH/2 + 72)}" text-anchor="middle" class="brand-mono" font-size="${orientation === 'vertical' ? 7 : 6}" fill="${BRAND.ink}" opacity="0.7" dominant-baseline="middle">${escapeXml(els.inpVolume.value)}</text>
 </svg>`;
 
             downloadBlob(svg, 'image/svg+xml', `jericho-label-${orientation}.svg`);
         }
 
         async function exportPNG() {
-            await exportRaster('image/png', 'jericho-label-' + orientation + '.png');
+            await exportRaster('image/png', `jericho-label-${orientation}.png`);
         }
 
         async function exportJPG() {
-            await exportRaster('image/jpeg', 'jericho-label-' + orientation + '.jpg', 0.95);
+            await exportRaster('image/jpeg', `jericho-label-${orientation}.jpg`, 0.95);
         }
 
         async function exportRaster(mime, filename, quality) {
             const node = els.container;
-            const scale = getScale();
+            const scale = EXPORT_SCALE;
 
             try {
                 const dataUrl = await htmltoimage.toPng(node, {
@@ -386,7 +419,6 @@
                 });
 
                 if (mime === 'image/jpeg') {
-                    // Convert png dataurl to jpeg
                     const img = new Image();
                     img.src = dataUrl;
                     await new Promise(r => img.onload = r);
@@ -408,13 +440,17 @@
         }
 
         async function imageToDataURL(url) {
-            const img = await fetch(url);
-            const blob = await img.blob();
+            const resp = await fetch(url);
+            const blob = await resp.blob();
             return new Promise((resolve) => {
                 const reader = new FileReader();
                 reader.onloadend = () => resolve(reader.result);
                 reader.readAsDataURL(blob);
             });
+        }
+
+        function escapeXml(text) {
+            return String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
         }
 
         function downloadBlob(dataUrl, mime, filename) {
